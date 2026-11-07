@@ -114,11 +114,21 @@
       border-color: var(--primary);
     }
 
-    .btn-icon.safe-active {
-      border-color: var(--success);
-      color: var(--success);
-      background: rgba(16, 185, 129, 0.15);
-    }
+    .btn-icon.safe-full {
+          border-color: var(--success);
+          color: var(--success);
+          background: rgba(16, 185, 129, 0.15);
+        }
+        .btn-icon.safe-half {
+          border-color: #f59e0b;
+          color: #f59e0b;
+          background: rgba(245, 158, 11, 0.15);
+        }
+        .btn-icon.safe-off {
+          border-color: var(--danger);
+          color: var(--danger);
+          background: rgba(239, 68, 68, 0.15);
+        }
 
     .container {
       width: 100%;
@@ -646,7 +656,7 @@
   <header>
     <div class="brand">PARTY PULSE</div>
     <div class="controls-row">
-      <button class="btn-icon safe-active" id="btn-safe-mode" onclick="toggleSafeMode()">🛡️ Safe: ON</button>
+      <button class="btn-icon safe-full" id="btn-safe-mode" onclick="cycleSafeMode()">🛡️ Safe: FULL</button>
       <button class="btn-icon" id="btn-players">Roster (<span id="player-count">0</span>)</button>
       <button class="btn-icon" id="btn-stats" onclick="openStatsModal()">📊 Stats</button>
       <button class="btn-icon" id="btn-custom">Questions</button>
@@ -951,7 +961,59 @@
     let audioCtx = null;
     let statementData = [];
     let pendingPlayer = null;
-    let safeMode = true;
+// Safety States: 'full' -> 'half' -> 'off'
+    let safeLevel = 'full';
+
+    function cycleSafeMode() {
+      const b = document.getElementById("btn-safe-mode");
+      b.classList.remove("safe-full", "safe-half", "safe-off");
+
+      if (safeLevel === 'full') {
+        safeLevel = 'half';
+        b.classList.add("safe-half");
+        b.innerText = "👀 Safe: HALF";
+        showToast("Safe HALF: Truths & phone dares ON, weird physical spectacles BLOCKED");
+      } else if (safeLevel === 'half') {
+        safeLevel = 'off';
+        b.classList.add("safe-off");
+        b.innerText = "⚠️ Safe: OFF";
+        showToast("Safe OFF: All proximity & unfiltered dares active!");
+      } else {
+        safeLevel = 'full';
+        b.classList.add("safe-full");
+        b.innerText = "🛡️ Safe: FULL";
+        showToast("Safe FULL: All romance, contact & proximity blocked");
+      }
+    }
+
+    function isSafeModeViolation(item, rawText) {
+      if (safeLevel === 'off') return false;
+
+      const textLower = (rawText || "").toLowerCase();
+
+      // FULL MODE: Blocks everything romantic, crush-related, proximity, and physical spectacle
+      if (safeLevel === 'full') {
+        if (item && (item.not_in_safe_mode === true || item.romantic === true)) return true;
+        const forbiddenFull = [
+          "crush", "hug", "kiss", "holding hands", "date", 
+          "slow dance", "attractiveness", "prom", "lap", "waist", 
+          "cpr", "pulse", "heart rate", "heartbeat", "shoes on tops"
+        ];
+        return forbiddenFull.some(w => textLower.includes(w));
+      }
+
+      // HALF MODE: Truths, phone snooping, and roasts are allowed.
+      // Blocks only physical spectacles that look alarming or strange to an outsider walking past.
+      if (safeLevel === 'half') {
+        const forbiddenHalf = [
+          "cpr", "lap", "slow dance", "heart rate", 
+          "pulse", "heartbeat", "kiss", "waist", "stand on the tops of your shoes"
+        ];
+        return forbiddenHalf.some(w => textLower.includes(w));
+      }
+
+      return false;
+    }
     let shakeCooldown = false;
 
     let globalTodState = { lastChoice: null, streak: 0 };
