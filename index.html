@@ -1,0 +1,1764 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#0f172a">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>Party Pulse</title>
+  <style>
+    :root {
+      --bg-gradient: radial-gradient(circle at 20% 20%, #1e1b4b 0%, #0f172a 100%);
+      --surface: rgba(30, 41, 59, 0.85);
+      --surface-border: rgba(255, 255, 255, 0.12);
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --primary: #8b5cf6;
+      --primary-hover: #7c3aed;
+      --secondary: #ec4899;
+      --accent: #06b6d4;
+      --success: #10b981;
+      --danger: #ef4444;
+      --card-bg: #1e293b;
+      --shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.5);
+    }
+
+    [data-theme="light"] {
+      --bg-gradient: linear-gradient(135deg, #fdf4ff 0%, #e0e7ff 50%, #f0fdf4 100%);
+      --surface: rgba(255, 255, 255, 0.9);
+      --surface-border: rgba(0, 0, 0, 0.08);
+      --text-main: #0f172a;
+      --text-muted: #64748b;
+      --primary: #6366f1;
+      --primary-hover: #4f46e5;
+      --secondary: #d946ef;
+      --accent: #0284c7;
+      --success: #059669;
+      --danger: #dc2626;
+      --card-bg: #ffffff;
+      --shadow: 0 10px 25px -5px rgba(99, 102, 241, 0.15);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      user-select: none;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+      background: var(--bg-gradient);
+      color: var(--text-main);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: background 0.3s ease, color 0.3s ease;
+      overflow-x: hidden;
+    }
+
+    header {
+      width: 100%;
+      max-width: 900px;
+      padding: 16px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      font-size: 1.5rem;
+      font-weight: 900;
+      letter-spacing: -0.5px;
+      background: linear-gradient(45deg, var(--secondary), var(--primary));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .controls-row {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    button {
+      cursor: pointer;
+      border: none;
+      outline: none;
+      font-weight: 600;
+      transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      touch-action: manipulation;
+    }
+
+    .btn-icon {
+      background: var(--surface);
+      border: 1px solid var(--surface-border);
+      color: var(--text-main);
+      padding: 8px 12px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.88rem;
+      backdrop-filter: blur(8px);
+    }
+
+    .btn-icon:hover {
+      transform: translateY(-1px);
+      border-color: var(--primary);
+    }
+
+    .btn-icon.safe-active {
+      border-color: var(--success);
+      color: var(--success);
+      background: rgba(16, 185, 129, 0.15);
+    }
+
+    .container {
+      width: 100%;
+      max-width: 900px;
+      padding: 12px 20px 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .meta-bar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      background: var(--surface);
+      border: 1px solid var(--surface-border);
+      padding: 12px 16px;
+      border-radius: 16px;
+      backdrop-filter: blur(10px);
+    }
+
+    .age-selector {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(0, 0, 0, 0.15);
+      padding: 4px;
+      border-radius: 12px;
+    }
+
+    .age-chip {
+      padding: 6px 12px;
+      border-radius: 8px;
+      background: transparent;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .age-chip.active {
+      background: var(--primary);
+      color: #ffffff;
+      box-shadow: 0 2px 8px rgba(139, 92, 246, 0.4);
+    }
+
+    .age-chip.locked {
+      opacity: 0.35;
+      cursor: not-allowed !important;
+      position: relative;
+    }
+
+    .active-player-badge {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.95rem;
+      font-weight: 700;
+      flex-wrap: wrap;
+    }
+
+    .player-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--secondary);
+      box-shadow: 0 0 10px var(--secondary);
+    }
+
+    .coin-tag {
+      background: #f59e0b;
+      color: #000;
+      font-size: 0.72rem;
+      font-weight: 900;
+      padding: 2px 8px;
+      border-radius: 999px;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .games-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+    }
+
+    .game-card {
+      background: var(--surface);
+      border: 1px solid var(--surface-border);
+      border-radius: 20px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 180px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(10px);
+    }
+
+    .game-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--primary);
+    }
+
+    .game-card h3 {
+      font-size: 1.25rem;
+      font-weight: 800;
+      margin-bottom: 6px;
+    }
+
+    .game-card p {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      line-height: 1.3;
+    }
+
+    .card-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: auto;
+    }
+
+    .btn-play {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: #fff;
+      padding: 8px 16px;
+      border-radius: 10px;
+      font-size: 0.85rem;
+    }
+
+    .screen {
+      display: none;
+      width: 100%;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .screen.active {
+      display: flex;
+    }
+
+    .play-arena {
+      background: var(--card-bg);
+      border: 1px solid var(--surface-border);
+      border-radius: 24px;
+      min-height: 380px;
+      padding: 32px 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+      box-shadow: var(--shadow);
+    }
+
+    .prompt-category {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--text-muted);
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .prompt-text {
+      font-size: 1.55rem;
+      font-weight: 800;
+      line-height: 1.4;
+      max-width: 700px;
+      margin: 16px 0;
+      min-height: 80px;
+      text-align: center;
+    }
+
+    .target-token {
+      display: inline-block;
+      color: var(--secondary);
+      background: rgba(236, 72, 153, 0.15);
+      padding: 2px 8px;
+      margin: 0 4px;
+      border-radius: 8px;
+      vertical-align: baseline;
+    }
+
+    .play-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+      margin-top: 16px;
+      width: 100%;
+    }
+
+    .streak-warning {
+      width: 100%;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--secondary);
+      margin-top: 4px;
+      display: none;
+    }
+
+    .btn-action {
+      padding: 14px 28px;
+      border-radius: 14px;
+      font-size: 1rem;
+      color: #ffffff;
+      background: var(--primary);
+      box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3);
+    }
+
+    .btn-action:hover:not(:disabled) {
+      background: var(--primary-hover);
+      transform: translateY(-2px);
+    }
+
+    .btn-action:disabled {
+      opacity: 0.35 !important;
+      cursor: not-allowed !important;
+      box-shadow: none !important;
+      transform: none !important;
+    }
+
+    .btn-secondary {
+      background: var(--surface);
+      border: 1px solid var(--surface-border);
+      color: var(--text-main);
+    }
+
+    .btn-secondary:hover:not(:disabled) {
+      border-color: var(--primary);
+    }
+
+    .timer-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      margin: 16px 0;
+    }
+
+    .timer-ring {
+      position: relative;
+      width: 120px;
+      height: 120px;
+    }
+
+    .timer-ring svg {
+      transform: rotate(-90deg);
+      width: 120px;
+      height: 120px;
+    }
+
+    .timer-ring circle {
+      fill: none;
+      stroke-width: 8;
+      stroke-linecap: round;
+    }
+
+    .timer-ring .bg {
+      stroke: rgba(255, 255, 255, 0.1);
+    }
+
+    [data-theme="light"] .timer-ring .bg {
+      stroke: rgba(0, 0, 0, 0.08);
+    }
+
+    .timer-ring .progress {
+      stroke: var(--secondary);
+      stroke-dasharray: 339;
+      stroke-dashoffset: 0;
+      transition: stroke-dashoffset 0.1s linear;
+    }
+
+    .timer-digit {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 2.2rem;
+      font-weight: 900;
+    }
+
+    .two-truths-form {
+      width: 100%;
+      max-width: 520px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin: 12px 0;
+      text-align: left;
+    }
+
+    .two-truths-input-row {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      background: var(--surface);
+      border: 1px solid var(--surface-border);
+      border-radius: 12px;
+      padding: 10px 14px;
+    }
+
+    .two-truths-input-row input[type="text"] {
+      flex: 1;
+      background: transparent;
+      border: none;
+      outline: none;
+      color: var(--text-main);
+      font-size: 0.95rem;
+    }
+
+    .guess-list {
+      width: 100%;
+      max-width: 520px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin: 16px 0;
+    }
+
+    .guess-btn {
+      width: 100%;
+      padding: 14px 18px;
+      border-radius: 12px;
+      background: var(--surface);
+      border: 1px solid var(--surface-border);
+      color: var(--text-main);
+      text-align: left;
+      font-size: 1rem;
+    }
+
+    .guess-btn.revealed-lie {
+      border-color: var(--danger);
+      background: rgba(239, 68, 68, 0.15);
+      color: var(--danger);
+      font-weight: 700;
+    }
+
+    .guess-btn.revealed-truth {
+      border-color: var(--success);
+      background: rgba(16, 185, 129, 0.1);
+      color: var(--success);
+    }
+
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.65);
+      backdrop-filter: blur(8px);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      z-index: 1000;
+    }
+
+    .modal-overlay.active {
+      display: flex;
+    }
+
+    .modal-box {
+      background: var(--card-bg);
+      border: 1px solid var(--surface-border);
+      border-radius: 20px;
+      width: 100%;
+      max-width: 520px;
+      max-height: 85vh;
+      display: flex;
+      flex-direction: column;
+      padding: 24px;
+      box-shadow: var(--shadow);
+    }
+
+    .modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+
+    .modal-body {
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .input-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .input-group label {
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--text-muted);
+      text-transform: uppercase;
+    }
+
+    .input-group input, .input-group select, .input-group textarea {
+      background: var(--surface);
+      border: 1px solid var(--surface-border);
+      color: var(--text-main);
+      padding: 10px 14px;
+      border-radius: 10px;
+      outline: none;
+      font-size: 0.95rem;
+    }
+
+    .players-list, .custom-q-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      max-height: 240px;
+      overflow-y: auto;
+    }
+
+    .list-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: var(--surface);
+      padding: 10px 14px;
+      border-radius: 12px;
+      border: 1px solid var(--surface-border);
+      transition: opacity 0.2s;
+    }
+
+    .list-item.player-away {
+      opacity: 0.45;
+      border-style: dashed;
+    }
+
+    .player-meta-tag {
+      font-size: 0.75rem;
+      padding: 2px 8px;
+      border-radius: 6px;
+      background: rgba(139, 92, 246, 0.2);
+      color: var(--primary);
+      font-weight: 700;
+      margin-left: 6px;
+    }
+
+    .player-actions-cell {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .btn-away-toggle {
+      background: var(--surface);
+      border: 1px solid var(--surface-border);
+      color: var(--text-main);
+      font-size: 0.75rem;
+      padding: 4px 8px;
+      border-radius: 8px;
+    }
+
+    .btn-danger-icon {
+      background: transparent;
+      color: var(--danger);
+      font-size: 1.1rem;
+      padding: 4px 8px;
+      border-radius: 6px;
+    }
+
+    .btn-danger-icon:hover {
+      background: rgba(239, 68, 68, 0.1);
+    }
+
+    .stat-card {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: var(--surface);
+      border: 1px solid var(--surface-border);
+      padding: 12px 16px;
+      border-radius: 12px;
+    }
+
+    .stat-label {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: var(--text-muted);
+    }
+
+    .stat-value {
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: var(--secondary);
+    }
+
+    .toast {
+      position: fixed;
+      bottom: 24px;
+      background: var(--surface);
+      border: 1px solid var(--surface-border);
+      color: var(--text-main);
+      padding: 10px 18px;
+      border-radius: 30px;
+      font-size: 0.85rem;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(10px);
+      display: none;
+      z-index: 2000;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="brand">PARTY PULSE</div>
+    <div class="controls-row">
+      <button class="btn-icon safe-active" id="btn-safe-mode" onclick="toggleSafeMode()">🛡️ Safe: ON</button>
+      <button class="btn-icon" id="btn-players">Roster (<span id="player-count">0</span>)</button>
+      <button class="btn-icon" id="btn-stats" onclick="openStatsModal()">📊 Stats</button>
+      <button class="btn-icon" id="btn-custom">Questions</button>
+      <button class="btn-icon" id="btn-theme">Theme</button>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="meta-bar">
+      <div class="active-player-badge">
+        <span class="player-dot"></span>
+        <span id="player-banner">Add players to begin</span>
+      </div>
+      <div class="age-selector">
+        <button class="age-chip active" data-age="3+">3+</button>
+        <button class="age-chip" data-age="7+">7+</button>
+        <button class="age-chip" data-age="13+">13+</button>
+        <button class="age-chip" data-age="16+">16+</button>
+      </div>
+    </div>
+
+    <!-- HOME SCREEN (ALL 7 ORIGINAL GAMES PRESERVED) -->
+    <div id="home-screen" class="screen active">
+      <div class="games-grid">
+        <div class="game-card">
+          <div>
+            <h3>Truth or Dare</h3>
+            <p>Answer truthfully or face an unpredictable challenge.</p>
+          </div>
+          <div class="card-footer">
+            <button class="btn-play" onclick="launchGame('truth_or_dare')">Play</button>
+          </div>
+        </div>
+
+        <div class="game-card">
+          <div>
+            <h3>Never Have I Ever</h3>
+            <p>Reveal what you've done while others react.</p>
+          </div>
+          <div class="card-footer">
+            <button class="btn-play" onclick="launchGame('never_have_i_ever')">Play</button>
+          </div>
+        </div>
+
+        <div class="game-card">
+          <div>
+            <h3>Would You Rather</h3>
+            <p>Pick between two tough or hilarious hypothetical choices.</p>
+          </div>
+          <div class="card-footer">
+            <button class="btn-play" onclick="launchGame('would_you_rather')">Play</button>
+          </div>
+        </div>
+
+        <div class="game-card">
+          <div>
+            <h3>Most Likely To</h3>
+            <p>Vote on who in the room fits the statement best.</p>
+          </div>
+          <div class="card-footer">
+            <button class="btn-play" onclick="launchGame('most_likely_to')">Play</button>
+          </div>
+        </div>
+
+        <div class="game-card">
+          <div>
+            <h3>5-Second Rule</h3>
+            <p>Spit out 3 rapid answers before the buzzer sounds.</p>
+          </div>
+          <div class="card-footer">
+            <button class="btn-play" onclick="launchGame('five_second_rule')">Play</button>
+          </div>
+        </div>
+
+        <div class="game-card">
+          <div>
+            <h3>Charades</h3>
+            <p>Act out actions, objects, or chaos with zero words.</p>
+          </div>
+          <div class="card-footer">
+            <button class="btn-play" onclick="launchGame('charades')">Play</button>
+          </div>
+        </div>
+
+        <div class="game-card">
+          <div>
+            <h3>2 Truths & A Lie</h3>
+            <p>Input 3 personal statements, secret-mark the lie, let friends guess.</p>
+          </div>
+          <div class="card-footer">
+            <button class="btn-play" onclick="launchGame('two_truths_and_a_lie')">Play</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GAMEPLAY ARENA -->
+    <div id="game-screen" class="screen">
+      <div class="play-arena">
+        <div class="prompt-category" id="arena-category">Category</div>
+        <div class="prompt-text" id="arena-prompt">Prompt text will appear here</div>
+
+        <!-- TRUTH OR DARE CHOICES -->
+        <div id="arena-tod-choices" class="play-actions" style="display: none; flex-direction: column; align-items: center;">
+          <div style="display: flex; gap: 12px; justify-content: center; width: 100%;">
+            <button class="btn-action" id="btn-tod-truth" onclick="fetchTodPrompt('truth')">Truth</button>
+            <button class="btn-action" id="btn-tod-dare" style="background: var(--secondary);" onclick="fetchTodPrompt('dare')">Dare</button>
+          </div>
+          <div id="tod-streak-warning" class="streak-warning">Streak limit reached! You must pick the opposite option.</div>
+        </div>
+
+        <!-- 5-SECOND TIMER -->
+        <div id="arena-timer" class="timer-container" style="display: none;">
+          <div class="timer-ring">
+            <svg>
+              <circle class="bg" cx="60" cy="60" r="54"></circle>
+              <circle class="progress" id="timer-stroke" cx="60" cy="60" r="54"></circle>
+            </svg>
+            <div class="timer-digit" id="timer-number">5</div>
+          </div>
+          <button class="btn-icon" id="btn-start-timer" onclick="startCountdown(5)">Start 5s Timer</button>
+        </div>
+
+        <!-- 45-SECOND CHARADES TIMER -->
+        <div id="arena-charades-timer" class="timer-container" style="display: none;">
+          <div class="timer-ring">
+            <svg>
+              <circle class="bg" cx="60" cy="60" r="54"></circle>
+              <circle class="progress" id="charades-stroke" cx="60" cy="60" r="54"></circle>
+            </svg>
+            <div class="timer-digit" id="charades-number">45</div>
+          </div>
+          <button class="btn-icon" id="btn-start-charades" onclick="startCountdown(45, true)">Start 45s Timer</button>
+        </div>
+
+        <!-- TWO TRUTHS AND A LIE ARENA -->
+        <div id="arena-two-truths" style="display: none; width: 100%; display: flex; flex-direction: column; align-items: center;">
+          <div id="two-truths-step-input" class="two-truths-form">
+            <div class="two-truths-input-row">
+              <input type="radio" name="lie-index" value="0" checked>
+              <input type="text" id="statement-0" placeholder="Personal Statement 1">
+            </div>
+            <div class="two-truths-input-row">
+              <input type="radio" name="lie-index" value="1">
+              <input type="text" id="statement-1" placeholder="Personal Statement 2">
+            </div>
+            <div class="two-truths-input-row">
+              <input type="radio" name="lie-index" value="2">
+              <input type="text" id="statement-2" placeholder="Personal Statement 3">
+            </div>
+            <p style="font-size: 0.8rem; color: var(--text-muted); text-align: center;">Pick the radio button next to the LIE, then lock it.</p>
+            <button class="btn-action" onclick="lockTwoTruths()">Lock & Pass Device</button>
+          </div>
+
+          <div id="two-truths-step-guess" style="display: none; width: 100%; display: flex; flex-direction: column; align-items: center;">
+            <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 8px;">Group: Which one is the lie?</p>
+            <div class="guess-list" id="guess-buttons-container"></div>
+            <button class="btn-action" id="btn-reveal-lie" onclick="revealLie()">Reveal Lie</button>
+          </div>
+        </div>
+
+        <!-- STANDARD GAME CONTROLS (WITH VETO PASS COIN & FORFEIT) -->
+        <div class="play-actions" id="standard-controls">
+          <button class="btn-action btn-secondary" onclick="exitToHome()">Exit</button>
+          <button class="btn-action btn-secondary" id="btn-veto" style="color: #f59e0b;" onclick="useVetoCoin()">Veto (🪙 1)</button>
+          <button class="btn-action btn-secondary" id="btn-forfeit" style="color: var(--secondary);" onclick="triggerForfeitModal()">Forfeit</button>
+          <button class="btn-action" id="btn-next-card" onclick="advanceTurn()">Next Turn</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ROSTER MODAL -->
+  <div class="modal-overlay" id="modal-players">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3>Pass & Play Roster</h3>
+        <button class="btn-icon" onclick="closeModals()">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div style="display: flex; flex-direction: column; gap: 8px;">
+          <div style="display: flex; gap: 8px;">
+            <input type="text" id="new-player-name" placeholder="Name" style="flex: 2; padding: 10px; border-radius: 8px; border: 1px solid var(--surface-border); background: var(--surface); color: var(--text-main);">
+            <input type="number" id="new-player-age" placeholder="Age" min="3" max="99" style="flex: 1; padding: 10px; border-radius: 8px; border: 1px solid var(--surface-border); background: var(--surface); color: var(--text-main);">
+            <select id="new-player-gender" style="flex: 1.2; padding: 10px; border-radius: 8px; border: 1px solid var(--surface-border); background: var(--surface); color: var(--text-main);">
+              <option value="M">Male</option>
+              <option value="F">Female</option>
+              <option value="NB">Non-Binary</option>
+              <option value="O">Other</option>
+            </select>
+          </div>
+          <button class="btn-action" style="padding: 10px 16px; width: 100%;" onclick="promptAddPlayer()">Add Player</button>
+        </div>
+
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 8px;">
+          <span style="font-size: 0.8rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase;">ACTIVE MEMBERS</span>
+          <button class="btn-icon" style="color: var(--danger); font-size: 0.8rem; padding: 4px 8px;" onclick="resetLobby()">Reset Lobby</button>
+        </div>
+        <div class="players-list" id="players-list-ui"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONFIRM PLAYER MODAL -->
+  <div class="modal-overlay" id="modal-confirm">
+    <div class="modal-box" style="max-width: 400px; text-align: center;">
+      <h3 style="margin-bottom: 12px;">Confirm Player Details</h3>
+      <p id="confirm-msg" style="font-size: 0.95rem; color: var(--text-muted); margin-bottom: 20px; line-height: 1.4;"></p>
+      <div style="display: flex; gap: 10px; justify-content: center;">
+        <button class="btn-action btn-secondary" onclick="closeConfirmModal()">Cancel</button>
+        <button class="btn-action" id="btn-confirm-add" onclick="commitAddPlayer()">Confirm</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- FORFEIT PENALTY MODAL -->
+  <div class="modal-overlay" id="modal-forfeit">
+    <div class="modal-box" style="max-width: 440px; text-align: center;">
+      <h3 style="margin-bottom: 8px; color: var(--secondary);">⚡ Forfeit Penalty</h3>
+      <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 16px;">Prompt refused! Complete this quick penalty before passing the device:</p>
+      <div id="forfeit-text" style="font-size: 1.15rem; font-weight: 800; background: var(--surface); padding: 18px; border-radius: 14px; border: 1px solid var(--surface-border); margin-bottom: 20px; line-height: 1.4;">
+        Drink a full glass of water without hands.
+      </div>
+      <div style="display: flex; gap: 10px; justify-content: center;">
+        <button class="btn-action btn-secondary" onclick="reRollForfeit()">New Penalty</button>
+        <button class="btn-action" onclick="finishForfeit()">Completed Penalty</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- SESSION STATS / HEATMAP MODAL -->
+  <div class="modal-overlay" id="modal-stats">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3>Session Heatmap & Awards</h3>
+        <button class="btn-icon" onclick="closeModals()">&times;</button>
+      </div>
+      <div class="modal-body" id="stats-awards-list">
+        <!-- Rendered dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- CUSTOM QUESTION MANAGER MODAL -->
+  <div class="modal-overlay" id="modal-custom">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3>Custom Question Manager</h3>
+        <button class="btn-icon" onclick="closeModals()">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="input-group">
+          <label>Game</label>
+          <select id="custom-game">
+            <option value="truth">Truth</option>
+            <option value="dare">Dare</option>
+            <option value="never_have_i_ever">Never Have I Ever</option>
+            <option value="would_you_rather">Would You Rather</option>
+            <option value="most_likely_to">Most Likely To</option>
+            <option value="five_second_rule">5-Second Rule</option>
+            <option value="charades">Charades</option>
+          </select>
+        </div>
+        <div class="input-group">
+          <label>Target Age Mode</label>
+          <select id="custom-age">
+            <option value="3+">3+</option>
+            <option value="7+">7+</option>
+            <option value="13+">13+</option>
+            <option value="16+">16+</option>
+          </select>
+        </div>
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <input type="checkbox" id="custom-is-general" checked style="width: 18px; height: 18px; accent-color: var(--primary);">
+          <label for="custom-is-general" style="font-size: 0.85rem; color: var(--text-main);">General Question (can appear as baseline in older modes)</label>
+        </div>
+        <div class="input-group">
+          <label>Question / Prompt</label>
+          <textarea id="custom-text" rows="2" placeholder="Write question here... (Supports {other}, {other_gender}, {player2})"></textarea>
+        </div>
+        <button class="btn-action" onclick="saveCustomQuestion()">Save Question</button>
+
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 10px;">
+          <label style="font-size: 0.8rem; font-weight: 700; color: var(--text-muted);">SAVED CUSTOM ITEMS</label>
+          <button class="btn-danger-icon" onclick="clearAllCustom()">Clear All</button>
+        </div>
+        <div class="custom-q-list" id="custom-list-ui"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast">Notice</div>
+
+  <script>
+    let dataset = {};
+    let players = [];
+    let currentPlayerIndex = 0;
+    let selectedAge = "3+";
+    let activeGame = null;
+    let activeTodType = null;
+    let timerInterval = null;
+    let audioCtx = null;
+    let statementData = [];
+    let pendingPlayer = null;
+    let safeMode = true;
+    let shakeCooldown = false;
+
+    let globalTodState = { lastChoice: null, streak: 0 };
+
+    const forfeits = [
+      "Do 15 rapid squats while counting out loud in a dramatic opera voice.",
+      "Balance a cushion or shoe on your head while walking across the room twice.",
+      "Drink a full cup of water without using your hands.",
+      "Do a 30-second plank while the room asks you rapid-fire math questions.",
+      "Speak only in rhymes until your next turn.",
+      "Imitate your strictest teacher scolding someone until another player guesses who it is."
+    ];
+
+    function initAudio() {
+      if (!audioCtx) {
+        audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+      }
+    }
+
+    function playBeep(freq, duration, type = "sine") {
+      try {
+        initAudio();
+        const osc = audioCtx.createOscillator();
+        const gain = audioCtx.createGain();
+        osc.type = type;
+        osc.frequency.value = freq;
+        gain.gain.setValueAtTime(0.15, audioCtx.currentTime);
+        gain.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + duration);
+        osc.connect(gain);
+        gain.connect(audioCtx.destination);
+        osc.start();
+        osc.stop(audioCtx.currentTime + duration);
+      } catch (e) {}
+    }
+
+    async function loadQuestions() {
+      try {
+        const response = await fetch("questions.json");
+        if (response.ok) {
+          dataset = await response.json();
+          showToast("Loaded questions.json");
+        }
+      } catch (e) {
+        showToast("questions.json not loaded (CORS or file missing)");
+      }
+    }
+
+    function showToast(msg) {
+      const toast = document.getElementById("toast");
+      toast.innerText = msg;
+      toast.style.display = "block";
+      setTimeout(() => { toast.style.display = "none"; }, 2500);
+    }
+
+    /* Theme */
+    document.getElementById("btn-theme").addEventListener("click", () => {
+      const current = document.documentElement.getAttribute("data-theme");
+      const next = current === "dark" ? "light" : "dark";
+      document.documentElement.setAttribute("data-theme", next);
+    });
+
+    /* Safe Mode */
+    function toggleSafeMode() {
+      safeMode = !safeMode;
+      const b = document.getElementById("btn-safe-mode");
+      if (safeMode) {
+        b.classList.add("safe-active");
+        b.innerText = "🛡️ Safe: ON";
+        showToast("Safe Mode ON (filters some prompts)");
+      } else {
+        b.classList.remove("safe-active");
+        b.innerText = "⚠️ Safe: OFF";
+        showToast("Safe Mode OFF (some prompts enabled)");
+      }
+    }
+
+    function isSafeModeViolation(item, rawText) {
+      if (!safeMode) return false;
+      if (item && (item.not_in_safe_mode === true || item.romantic === true)) return true;
+      const textLower = (rawText || "").toLowerCase();
+      const forbidden = ["crush", "hug", "kiss", "holding hands", "date", "slow dance", "attractiveness", "prom"];
+      return forbidden.some(w => textLower.includes(w));
+    }
+
+    /* Age Selector */
+    document.querySelectorAll(".age-chip").forEach(btn => {
+      btn.addEventListener("click", () => {
+        if (btn.classList.contains("locked")) {
+          showToast(btn.title || "This mode is locked for younger players");
+          return;
+        }
+        document.querySelectorAll(".age-chip").forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+        selectedAge = btn.getAttribute("data-age");
+      });
+    });
+
+    function updatePlayerBanner() {
+      const banner = document.getElementById("player-banner");
+      if (players.length === 0) {
+        banner.innerText = "Add players to begin";
+      } else {
+        const active = players[currentPlayerIndex];
+        const awayTag = active.isAway ? " (Away 💤)" : "";
+        banner.innerHTML = `Turn: <strong>${active.name}</strong> (${active.age}y/o)${awayTag} <span class="coin-tag">🪙 ${active.passCoins || 0}</span>`;
+      }
+      document.getElementById("player-count").innerText = players.length;
+      updateVetoBtnState();
+    }
+
+    function updateVetoBtnState() {
+      const btn = document.getElementById("btn-veto");
+      if (!btn) return;
+      const active = players.length > 0 ? players[currentPlayerIndex] : null;
+      if (!active || active.passCoins <= 0 || document.getElementById("arena-tod-choices").style.display !== "none" && activeGame === "truth_or_dare") {
+        btn.disabled = true;
+        btn.innerText = active && active.passCoins > 0 ? `Veto (🪙 ${active.passCoins})` : "No Coins Left";
+      } else {
+        btn.disabled = false;
+        btn.innerText = `Veto (🪙 ${active.passCoins})`;
+      }
+    }
+
+    function promptAddPlayer() {
+      const nameInput = document.getElementById("new-player-name");
+      const ageInput = document.getElementById("new-player-age");
+      const genderInput = document.getElementById("new-player-gender");
+
+      const name = nameInput.value.trim();
+      const age = parseInt(ageInput.value, 10);
+      const gender = genderInput.value;
+
+      if (!name || isNaN(age)) {
+        showToast("Please enter a valid name and age");
+        return;
+      }
+
+      if (age < 3 || age > 99) {
+        showToast("Age must be between 3 and 99 (no vampires!)");
+        return;
+      }
+
+      pendingPlayer = { 
+        name, 
+        age, 
+        gender,
+        lastTodChoice: null,
+        todStreak: 0,
+        passCoins: 1,
+        isAway: false,
+        truthsCount: 0,
+        daresCount: 0,
+        targetCount: 0
+      };
+
+      const genderLabels = { M: "Male", F: "Female", NB: "Non-Binary", O: "Other" };
+      document.getElementById("confirm-msg").innerHTML = `
+        Are you sure you entered <strong>${name}</strong> correctly?<br>
+        Age: <strong>${age}</strong> | Gender: <strong>${genderLabels[gender] || gender}</strong><br><br>
+        <span style="font-size:0.8rem; color:var(--secondary);">Note: Player ages cannot be edited once confirmed.</span>
+      `;
+      document.getElementById("modal-confirm").classList.add("active");
+    }
+
+    function closeConfirmModal() {
+      document.getElementById("modal-confirm").classList.remove("active");
+      pendingPlayer = null;
+    }
+
+    function commitAddPlayer() {
+      if (pendingPlayer) {
+        players.push(pendingPlayer);
+        document.getElementById("new-player-name").value = "";
+        document.getElementById("new-player-age").value = "";
+        pendingPlayer = null;
+        closeConfirmModal();
+        renderPlayerList();
+        enforceAgeRestrictions();
+        updatePlayerBanner();
+      }
+    }
+
+    function removePlayer(idx) {
+      players.splice(idx, 1);
+      if (currentPlayerIndex >= players.length) {
+        currentPlayerIndex = 0;
+      }
+      renderPlayerList();
+      enforceAgeRestrictions();
+      updatePlayerBanner();
+    }
+
+    function togglePlayerAway(idx) {
+      if (players.length <= 1) return;
+      players[idx].isAway = !players[idx].isAway;
+      renderPlayerList();
+      updatePlayerBanner();
+      showToast(`${players[idx].name} marked as ${players[idx].isAway ? "Away (bypassed in turns)" : "Active"}`);
+    }
+
+    function resetLobby() {
+      players = [];
+      currentPlayerIndex = 0;
+      globalTodState = { lastChoice: null, streak: 0 };
+      renderPlayerList();
+      enforceAgeRestrictions();
+      updatePlayerBanner();
+      showToast("Lobby reset");
+    }
+
+    function enforceAgeRestrictions() {
+      const ageTiers = { "3+": 3, "7+": 7, "13+": 13, "16+": 16 };
+
+      if (players.length === 0) {
+        document.querySelectorAll(".age-chip").forEach(chip => {
+          chip.classList.remove("locked");
+          chip.title = "";
+          chip.innerHTML = chip.getAttribute("data-age");
+        });
+        return;
+      }
+
+      const activePlayers = players.filter(p => !p.isAway);
+      const evalPool = activePlayers.length > 0 ? activePlayers : players;
+      const minAge = Math.min(...evalPool.map(p => p.age));
+      let highestAllowed = "3+";
+      if (minAge >= 16) highestAllowed = "16+";
+      else if (minAge >= 13) highestAllowed = "13+";
+      else if (minAge >= 7) highestAllowed = "7+";
+
+      document.querySelectorAll(".age-chip").forEach(chip => {
+        const tier = chip.getAttribute("data-age");
+        const reqAge = ageTiers[tier];
+
+        if (minAge < reqAge) {
+          chip.classList.add("locked");
+          chip.title = `Locked: A player in the room is ${minAge} years old (requires ${reqAge}+)`;
+          chip.innerHTML = `${tier} &#128274;`;
+        } else {
+          chip.classList.remove("locked");
+          chip.title = "";
+          chip.innerHTML = tier;
+        }
+      });
+
+      if (ageTiers[selectedAge] > minAge) {
+        selectedAge = highestAllowed;
+        document.querySelectorAll(".age-chip").forEach(c => c.classList.remove("active"));
+        const allowedChip = document.querySelector(`.age-chip[data-age="${highestAllowed}"]`);
+        if (allowedChip) allowedChip.classList.add("active");
+        showToast(`Age mode capped at ${highestAllowed} (youngest player is ${minAge})`);
+      }
+    }
+
+    function renderPlayerList() {
+      const container = document.getElementById("players-list-ui");
+      container.innerHTML = "";
+      if (players.length === 0) {
+        container.innerHTML = '<div style="font-size:0.85rem; color:var(--text-muted); padding:8px;">No players added yet.</div>';
+        return;
+      }
+      players.forEach((p, idx) => {
+        const row = document.createElement("div");
+        row.className = "list-item" + (p.isAway ? " player-away" : "");
+        row.innerHTML = `
+          <div>
+            <strong>${p.name}</strong>
+            <span class="player-meta-tag">${p.age}y/o</span>
+            <span class="player-meta-tag">${p.gender}</span>
+            <span class="player-meta-tag" style="background:rgba(245,158,11,0.2); color:#f59e0b;">🪙 ${p.passCoins}</span>
+          </div>
+          <div class="player-actions-cell">
+            <button class="btn-away-toggle" onclick="togglePlayerAway(${idx})">${p.isAway ? "Awake" : "Away"}</button>
+            <button class="btn-danger-icon" onclick="removePlayer(${idx})">&times;</button>
+          </div>
+        `;
+        container.appendChild(row);
+      });
+    }
+
+    document.getElementById("btn-players").addEventListener("click", () => {
+      document.getElementById("modal-players").classList.add("active");
+      renderPlayerList();
+    });
+
+    document.getElementById("btn-custom").addEventListener("click", () => {
+      document.getElementById("modal-custom").classList.add("active");
+      renderCustomList();
+    });
+
+    function closeModals() {
+      document.querySelectorAll(".modal-overlay").forEach(m => m.classList.remove("active"));
+    }
+
+    /* Stats Modal */
+    function openStatsModal() {
+      const list = document.getElementById("stats-awards-list");
+      if (players.length === 0) {
+        list.innerHTML = `<div style="color:var(--text-muted); padding:8px;">Add players to see session heatmap and stats.</div>`;
+      } else {
+        const daredevil = [...players].sort((a,b) => (b.daresCount || 0) - (a.daresCount || 0))[0];
+        const truthTeller = [...players].sort((a,b) => (b.truthsCount || 0) - (a.truthsCount || 0))[0];
+        const targeted = [...players].sort((a,b) => (b.targetCount || 0) - (a.targetCount || 0))[0];
+
+        list.innerHTML = `
+          <div class="stat-card">
+            <div><div class="stat-label">The Daredevil</div><strong>Most Dares Faced</strong></div>
+            <div class="stat-value">${daredevil && daredevil.daresCount > 0 ? daredevil.name + " (" + daredevil.daresCount + ")" : "None yet"}</div>
+          </div>
+          <div class="stat-card">
+            <div><div class="stat-label">The Truth Teller</div><strong>Most Truths Spilled</strong></div>
+            <div class="stat-value" style="color:var(--primary);">${truthTeller && truthTeller.truthsCount > 0 ? truthTeller.name + " (" + truthTeller.truthsCount + ")" : "None yet"}</div>
+          </div>
+          <div class="stat-card">
+            <div><div class="stat-label">The Target</div><strong>Most Called Out in Room</strong></div>
+            <div class="stat-value" style="color:#f59e0b;">${targeted && targeted.targetCount > 0 ? targeted.name + " (" + targeted.targetCount + "x)" : "None yet"}</div>
+          </div>
+        `;
+      }
+      document.getElementById("modal-stats").classList.add("active");
+    }
+
+    /* Forfeit Modal */
+    function triggerForfeitModal() {
+      const forfeit = forfeits[Math.floor(Math.random() * forfeits.length)];
+      document.getElementById("forfeit-text").innerText = forfeit;
+      document.getElementById("modal-forfeit").classList.add("active");
+    }
+
+    function reRollForfeit() {
+      const forfeit = forfeits[Math.floor(Math.random() * forfeits.length)];
+      document.getElementById("forfeit-text").innerText = forfeit;
+    }
+
+    function finishForfeit() {
+      closeModals();
+      showToast("Penalty complete!");
+      advanceTurn();
+    }
+
+    /* Veto Coin Usage */
+    function useVetoCoin() {
+      const active = players.length > 0 ? players[currentPlayerIndex] : null;
+      if (!active || active.passCoins <= 0) {
+        showToast("No veto coins remaining! You must complete this prompt.");
+        return;
+      }
+      active.passCoins--;
+      updatePlayerBanner();
+      showToast("Veto used! Re-rolling prompt...");
+      if (activeGame === "truth_or_dare" && activeTodType) {
+        fetchTodPrompt(activeTodType, true);
+      } else {
+        advanceCard();
+      }
+    }
+
+    /* Shake to Re-Roll */
+    if (window.DeviceMotionEvent) {
+      window.addEventListener('devicemotion', (e) => {
+        if (shakeCooldown || !activeGame) return;
+        const acc = e.accelerationIncludingGravity;
+        if (!acc) return;
+        const mag = Math.sqrt(acc.x * acc.x + acc.y * acc.y + acc.z * acc.z);
+        if (mag > 23) {
+          shakeCooldown = true;
+          if (navigator.vibrate) navigator.vibrate(80);
+          showToast("📱 Shaken! Re-rolling card...");
+          if (activeGame === "truth_or_dare" && activeTodType) {
+            fetchTodPrompt(activeTodType, true);
+          } else {
+            advanceCard();
+          }
+          setTimeout(() => { shakeCooldown = false; }, 1600);
+        }
+      });
+    }
+
+    function getCustomQuestions() {
+      const raw = localStorage.getItem("party_pulse_custom");
+      return raw ? JSON.parse(raw) : [];
+    }
+
+    function saveCustomQuestion() {
+      const game = document.getElementById("custom-game").value;
+      const age = document.getElementById("custom-age").value;
+      const text = document.getElementById("custom-text").value.trim();
+      const isGeneral = document.getElementById("custom-is-general").checked;
+      if (!text) return;
+      const list = getCustomQuestions();
+      list.push({ id: Date.now(), game, age, text, general: isGeneral });
+      localStorage.setItem("party_pulse_custom", JSON.stringify(list));
+      document.getElementById("custom-text").value = "";
+      renderCustomList();
+      showToast("Custom prompt saved");
+    }
+
+    function deleteCustom(id) {
+      let list = getCustomQuestions();
+      list = list.filter(item => item.id !== id);
+      localStorage.setItem("party_pulse_custom", JSON.stringify(list));
+      renderCustomList();
+    }
+
+    function clearAllCustom() {
+      localStorage.removeItem("party_pulse_custom");
+      renderCustomList();
+      showToast("Cleared custom prompts");
+    }
+
+    function renderCustomList() {
+      const container = document.getElementById("custom-list-ui");
+      container.innerHTML = "";
+      const list = getCustomQuestions();
+      if (list.length === 0) {
+        container.innerHTML = '<div style="font-size:0.85rem; color:var(--text-muted); padding:8px;">No custom items added yet.</div>';
+        return;
+      }
+      list.forEach(item => {
+        const row = document.createElement("div");
+        row.className = "list-item";
+        row.innerHTML = `
+          <div style="font-size:0.85rem;">
+            <strong style="color:var(--primary);">${item.game.toUpperCase()} (${item.age})</strong>: ${item.text}
+          </div>
+          <button class="btn-danger-icon" onclick="deleteCustom(${item.id})">&times;</button>
+        `;
+        container.appendChild(row);
+      });
+    }
+
+    /* Token Replacer */
+    function resolvePromptTokens(item) {
+      let rawText = typeof item === "string" ? item : item.text;
+      const minPlayersReq = item.min_players || 1;
+
+      // Filter out players marked 'away'
+      const activePlayers = players.filter(p => !p.isAway);
+      if (activePlayers.length < minPlayersReq) return null;
+
+      const active = activePlayers.length > 0 ? activePlayers[currentPlayerIndex % activePlayers.length] : { name: "Player", age: 15, gender: "O" };
+      const others = activePlayers.filter(p => p !== active);
+
+      // Safe Mode keyword filter
+      if (isSafeModeViolation(item, rawText)) return null;
+
+      if (item.requires_different_gender) {
+        const diffGenderList = others.filter(p => p.gender !== active.gender);
+        if (diffGenderList.length === 0) return null;
+
+        if (item.romantic) {
+          const validRomantic = diffGenderList.filter(p => Math.abs(active.age - p.age) <= 3);
+          if (validRomantic.length === 0) return null;
+          const chosen = validRomantic[Math.floor(Math.random() * validRomantic.length)];
+          chosen.targetCount = (chosen.targetCount || 0) + 1;
+          rawText = rawText.replace(/{other_gender}/g, `<span class="target-token">${chosen.name}</span>`);
+        } else {
+          const chosen = diffGenderList[Math.floor(Math.random() * diffGenderList.length)];
+          chosen.targetCount = (chosen.targetCount || 0) + 1;
+          rawText = rawText.replace(/{other_gender}/g, `<span class="target-token">${chosen.name}</span>`);
+        }
+      }
+
+      if (rawText.includes("{all_players}")) {
+        if (activePlayers.length <= 1) {
+          rawText = rawText.replace(/{all_players}/g, "everyone");
+        } else if (activePlayers.length === 2) {
+          rawText = rawText.replace(/{all_players}/g, `${activePlayers[0].name} and ${activePlayers[1].name}`);
+        } else {
+          const names = activePlayers.map(p => p.name);
+          const listStr = names.slice(0, -1).join(", ") + ", and " + names[names.length - 1];
+          rawText = rawText.replace(/{all_players}/g, `<span class="target-token">${listStr}</span>`);
+        }
+      }
+
+      if (rawText.includes("{other}")) {
+        if (others.length === 0) return null;
+        const randOther = others[Math.floor(Math.random() * others.length)];
+        randOther.targetCount = (randOther.targetCount || 0) + 1;
+        rawText = rawText.replace(/{other}/g, `<span class="target-token">${randOther.name}</span>`);
+      }
+
+      if (rawText.includes("{player2}") || rawText.includes("{player3}")) {
+        if (others.length < 2) return null;
+        const shuffled = [...others].sort(() => Math.random() - 0.5);
+        shuffled[0].targetCount = (shuffled[0].targetCount || 0) + 1;
+        shuffled[1].targetCount = (shuffled[1].targetCount || 0) + 1;
+        rawText = rawText.replace(/{player2}/g, `<span class="target-token">${shuffled[0].name}</span>`).replace(/{player3}/g, `<span class="target-token">${shuffled[1].name}</span>`);
+      }
+
+      return rawText;
+    }
+
+    function getQuestionsForPool(gameKey, subKey = null) {
+      function extractItems(targetAge, requireGeneralOnly = false) {
+        let entries = [];
+        let raw = null;
+
+        if (subKey) {
+          if (dataset[gameKey] && dataset[gameKey][subKey] && dataset[gameKey][subKey][targetAge]) {
+            raw = dataset[gameKey][subKey][targetAge];
+          }
+        } else {
+          if (dataset[gameKey] && dataset[gameKey][targetAge]) {
+            raw = dataset[gameKey][targetAge];
+          }
+        }
+
+        if (raw && Array.isArray(raw)) {
+          raw.forEach(item => {
+            if (typeof item === "string") {
+              entries.push({ text: item, general: true });
+            } else if (item && typeof item === "object") {
+              entries.push(item);
+            }
+          });
+        }
+
+        const custom = getCustomQuestions();
+        const customFiltered = custom
+          .filter(c => (subKey ? c.game === subKey : c.game === gameKey) && c.age === targetAge)
+          .map(c => ({ text: c.text, general: c.general !== false }));
+
+        entries = entries.concat(customFiltered);
+
+        if (requireGeneralOnly) {
+          entries = entries.filter(e => e.general === true);
+        }
+
+        return entries;
+      }
+
+      let primaryPool = extractItems(selectedAge, false);
+      let baselinePool = [];
+      const lowerAgeTiers = [];
+
+      if (selectedAge === "16+") lowerAgeTiers.push("13+", "7+", "3+");
+      else if (selectedAge === "13+") lowerAgeTiers.push("7+", "3+");
+      else if (selectedAge === "7+") lowerAgeTiers.push("3+");
+
+      lowerAgeTiers.forEach(tier => {
+        baselinePool = baselinePool.concat(extractItems(tier, true));
+      });
+
+      for (let attempt = 0; attempt < 60; attempt++) {
+        const pickPrimary = Math.random() < 0.7;
+        let candidatePool = pickPrimary && primaryPool.length > 0 ? primaryPool : (baselinePool.length > 0 ? baselinePool : primaryPool);
+        if (candidatePool.length === 0) break;
+
+        const pickedItem = candidatePool[Math.floor(Math.random() * candidatePool.length)];
+        const resolved = resolvePromptTokens(pickedItem);
+        if (resolved) return resolved;
+      }
+
+      return "No valid question available for this player configuration.";
+    }
+
+    function updateTodStreakUI() {
+      const active = players.length > 0 ? players[currentPlayerIndex] : null;
+      const lastChoice = active ? active.lastTodChoice : globalTodState.lastChoice;
+      const streak = active ? active.todStreak : globalTodState.streak;
+
+      const btnTruth = document.getElementById("btn-tod-truth");
+      const btnDare = document.getElementById("btn-tod-dare");
+      const warning = document.getElementById("tod-streak-warning");
+
+      btnTruth.disabled = false;
+      btnDare.disabled = false;
+      warning.style.display = "none";
+
+      if (lastChoice === "truth" && streak >= 2) {
+        btnTruth.disabled = true;
+        warning.innerText = "Truth locked (2 in a row)! You must pick Dare.";
+        warning.style.display = "block";
+      } else if (lastChoice === "dare" && streak >= 2) {
+        btnDare.disabled = true;
+        warning.innerText = "Dare locked (2 in a row)! You must pick Truth.";
+        warning.style.display = "block";
+      }
+    }
+
+    function recordTodChoice(chosen) {
+      const active = players.length > 0 ? players[currentPlayerIndex] : null;
+      if (active) {
+        if (chosen === 'truth') active.truthsCount = (active.truthsCount || 0) + 1;
+        else active.daresCount = (active.daresCount || 0) + 1;
+
+        if (active.lastTodChoice === chosen) {
+          active.todStreak = (active.todStreak || 1) + 1;
+        } else {
+          active.lastTodChoice = chosen;
+          active.todStreak = 1;
+        }
+      } else {
+        if (globalTodState.lastChoice === chosen) {
+          globalTodState.streak += 1;
+        } else {
+          globalTodState.lastChoice = chosen;
+          globalTodState.streak = 1;
+        }
+      }
+    }
+
+    function launchGame(game) {
+      activeGame = game;
+      activeTodType = null;
+      document.getElementById("home-screen").classList.remove("active");
+      document.getElementById("game-screen").classList.add("active");
+      resetGameViews();
+
+      const titles = {
+        "truth_or_dare": "Truth or Dare",
+        "never_have_i_ever": "Never Have I Ever",
+        "would_you_rather": "Would You Rather",
+        "most_likely_to": "Most Likely To",
+        "five_second_rule": "5-Second Rule",
+        "charades": "Charades",
+        "two_truths_and_a_lie": "Two Truths & A Lie"
+      };
+      document.getElementById("arena-category").innerText = titles[game] || game;
+
+      if (game === "truth_or_dare") {
+        document.getElementById("arena-prompt").innerText = "Pick Truth or Dare!";
+        document.getElementById("arena-tod-choices").style.display = "flex";
+        document.getElementById("btn-next-card").style.display = "none";
+        document.getElementById("btn-veto").style.display = "none";
+        document.getElementById("btn-forfeit").style.display = "none";
+        updateTodStreakUI();
+      } else if (game === "five_second_rule") {
+        document.getElementById("arena-timer").style.display = "flex";
+        advanceCard();
+      } else if (game === "charades") {
+        document.getElementById("arena-charades-timer").style.display = "flex";
+        advanceCard();
+      } else if (game === "two_truths_and_a_lie") {
+        setupTwoTruthsInput();
+      } else {
+        advanceCard();
+      }
+    }
+
+    function resetGameViews() {
+      clearInterval(timerInterval);
+      document.getElementById("arena-tod-choices").style.display = "none";
+      document.getElementById("arena-timer").style.display = "none";
+      document.getElementById("arena-charades-timer").style.display = "none";
+      document.getElementById("arena-two-truths").style.display = "none";
+      document.getElementById("two-truths-step-input").style.display = "none";
+      document.getElementById("two-truths-step-guess").style.display = "none";
+      document.getElementById("btn-next-card").style.display = "inline-block";
+      document.getElementById("btn-veto").style.display = "inline-block";
+      document.getElementById("btn-forfeit").style.display = "inline-block";
+      document.getElementById("standard-controls").style.display = "flex";
+      resetTimerVisuals();
+    }
+
+    function resetTimerVisuals() {
+      const circle5 = document.getElementById("timer-stroke");
+      const circle45 = document.getElementById("charades-stroke");
+      if (circle5) circle5.style.strokeDashoffset = "0";
+      if (circle45) circle45.style.strokeDashoffset = "0";
+      document.getElementById("timer-number").innerText = "5";
+      document.getElementById("charades-number").innerText = "45";
+    }
+
+    function exitToHome() {
+      clearInterval(timerInterval);
+      document.getElementById("game-screen").classList.remove("active");
+      document.getElementById("home-screen").classList.add("active");
+      activeGame = null;
+      activeTodType = null;
+    }
+
+    function advanceTurn() {
+      if (players.length > 0) {
+        // Skip players who are away
+        let attempts = 0;
+        do {
+          currentPlayerIndex = (currentPlayerIndex + 1) % players.length;
+          attempts++;
+        } while (players[currentPlayerIndex].isAway && attempts < players.length);
+        updatePlayerBanner();
+      }
+      if (activeGame === "truth_or_dare") {
+        activeTodType = null;
+        document.getElementById("arena-prompt").innerText = "Pick Truth or Dare!";
+        document.getElementById("arena-tod-choices").style.display = "flex";
+        document.getElementById("btn-next-card").style.display = "none";
+        document.getElementById("btn-veto").style.display = "none";
+        document.getElementById("btn-forfeit").style.display = "none";
+        updateTodStreakUI();
+      } else if (activeGame === "two_truths_and_a_lie") {
+        setupTwoTruthsInput();
+      } else {
+        advanceCard();
+      }
+    }
+
+    function advanceCard() {
+      resetTimerVisuals();
+      const prompt = getQuestionsForPool(activeGame);
+      document.getElementById("arena-prompt").innerHTML = prompt;
+      updateVetoBtnState();
+    }
+
+    function fetchTodPrompt(sub, isReRoll = false) {
+      if (!isReRoll) recordTodChoice(sub);
+      activeTodType = sub;
+      const prompt = getQuestionsForPool("truth_or_dare", sub);
+      document.getElementById("arena-prompt").innerHTML = `[${sub.toUpperCase()}] ${prompt}`;
+      document.getElementById("arena-tod-choices").style.display = "none";
+      document.getElementById("btn-next-card").style.display = "inline-block";
+      document.getElementById("btn-veto").style.display = "inline-block";
+      document.getElementById("btn-forfeit").style.display = "inline-block";
+      updateVetoBtnState();
+    }
+
+    function startCountdown(seconds, isCharades = false) {
+      clearInterval(timerInterval);
+      let left = seconds;
+      const numElem = document.getElementById(isCharades ? "charades-number" : "timer-number");
+      const strokeElem = document.getElementById(isCharades ? "charades-stroke" : "timer-stroke");
+      const circumference = 339;
+
+      numElem.innerText = left;
+      strokeElem.style.strokeDashoffset = "0";
+      playBeep(440, 0.08);
+
+      timerInterval = setInterval(() => {
+        left--;
+        numElem.innerText = left;
+        const progress = (seconds - left) / seconds;
+        strokeElem.style.strokeDashoffset = circumference * progress;
+
+        if (left > 0) {
+          playBeep(440, 0.05);
+        } else {
+          clearInterval(timerInterval);
+          playBeep(220, 0.4, "square");
+        }
+      }, 1000);
+    }
+
+    function setupTwoTruthsInput() {
+      document.getElementById("arena-prompt").innerHTML = getQuestionsForPool("two_truths_and_a_lie");
+      document.getElementById("arena-two-truths").style.display = "flex";
+      document.getElementById("two-truths-step-input").style.display = "flex";
+      document.getElementById("two-truths-step-guess").style.display = "none";
+      document.getElementById("standard-controls").style.display = "none";
+      document.getElementById("statement-0").value = "";
+      document.getElementById("statement-1").value = "";
+      document.getElementById("statement-2").value = "";
+      document.querySelector('input[name="lie-index"][value="0"]').checked = true;
+    }
+
+    function lockTwoTruths() {
+      const s0 = document.getElementById("statement-0").value.trim();
+      const s1 = document.getElementById("statement-1").value.trim();
+      const s2 = document.getElementById("statement-2").value.trim();
+      if (!s0 || !s1 || !s2) {
+        showToast("Please fill in all 3 statements");
+        return;
+      }
+      const lieVal = parseInt(document.querySelector('input[name="lie-index"]:checked').value);
+      statementData = [
+        { text: s0, isLie: lieVal === 0 },
+        { text: s1, isLie: lieVal === 1 },
+        { text: s2, isLie: lieVal === 2 }
+      ];
+      statementData.sort(() => Math.random() - 0.5);
+
+      document.getElementById("two-truths-step-input").style.display = "none";
+      document.getElementById("two-truths-step-guess").style.display = "flex";
+      document.getElementById("standard-controls").style.display = "flex";
+
+      const container = document.getElementById("guess-buttons-container");
+      container.innerHTML = "";
+      statementData.forEach((item, idx) => {
+        const btn = document.createElement("button");
+        btn.className = "guess-btn";
+        btn.id = "guess-stmt-" + idx;
+        btn.innerText = item.text;
+        btn.onclick = () => {
+          document.querySelectorAll(".guess-btn").forEach(b => b.style.outline = "none");
+          btn.style.outline = "2px solid var(--primary)";
+        };
+        container.appendChild(btn);
+      });
+      document.getElementById("btn-reveal-lie").style.display = "inline-block";
+    }
+
+    function revealLie() {
+      statementData.forEach((item, idx) => {
+        const btn = document.getElementById("guess-stmt-" + idx);
+        if (item.isLie) {
+          btn.classList.add("revealed-lie");
+          btn.innerText = item.text + " [THE LIE!]";
+        } else {
+          btn.classList.add("revealed-truth");
+          btn.innerText = item.text + " [TRUTH]";
+        }
+      });
+      document.getElementById("btn-reveal-lie").style.display = "none";
+    }
+
+    loadQuestions();
+    updatePlayerBanner();
+  </script>
+</body>
+</html>

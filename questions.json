@@ -1,0 +1,4113 @@
+{
+  "truth_or_dare": {
+    "truth": {
+      "3+": [
+        {
+          "text": "What animal makes the funniest sound to you?",
+          "general": true
+        },
+        {
+          "text": "What is your favorite color in the whole rainbow?",
+          "general": true
+        },
+        {
+          "text": "If you could eat only one treat every day, what would it be?",
+          "general": true
+        },
+        {
+          "text": "What makes you laugh the hardest?",
+          "general": true
+        },
+        {
+          "text": "What is the tastiest ice cream flavor ever?",
+          "general": true
+        },
+        {
+          "text": "If you could turn into any animal right now, what would you be?",
+          "general": true
+        },
+        {
+          "text": "What is your favorite song to dance to?",
+          "general": true
+        },
+        {
+          "text": "What is the yummiest fruit you like to eat?",
+          "general": true
+        },
+        {
+          "text": "Do you prefer big fluffy dogs or tiny playful cats?",
+          "general": true
+        },
+        {
+          "text": "What is something that tickles you the most?",
+          "general": true
+        },
+        {
+          "text": "What is your favorite toy to play with?",
+          "general": false
+        },
+        {
+          "text": "What is your favorite bedtime story?",
+          "general": false
+        },
+        {
+          "text": "Who is your favorite cartoon character?",
+          "general": false
+        },
+        {
+          "text": "Do you like taking naps or staying awake?",
+          "general": false
+        },
+        {
+          "text": "What stuffed animal do you sleep with?",
+          "general": false
+        },
+        {
+          "text": "What playground slide is the most fun?",
+          "general": false
+        },
+        {
+          "text": "What is your favorite game to play at preschool?",
+          "general": false
+        },
+        {
+          "text": "What color crayon do you use the most?",
+          "general": false
+        },
+        {
+          "text": "What superhero or princess do you want to dress up as?",
+          "general": false
+        },
+        {
+          "text": "What is your favorite snack to find in your lunchbox?",
+          "general": false
+        },
+        {
+          "text": "What pajama set is your favorite to wear?",
+          "general": false
+        },
+        {
+          "text": "Have you ever drawn on a wall with crayons?",
+          "general": false
+        },
+        {
+          "text": "What cartoon song do you know all the words to?",
+          "general": false
+        },
+        {
+          "text": "What is your favorite shape to draw?",
+          "general": false
+        },
+        {
+          "text": "Do you like jumping in puddles when it rains?",
+          "general": false
+        }
+      ],
+      "7+": [
+        {
+          "text": "What is the weirdest food combination you secretly enjoy?",
+          "general": true
+        },
+        {
+          "text": "What is the silliest rule your parents have in your house?",
+          "general": true
+        },
+        {
+          "text": "Have you ever accidentally eaten a piece of pet food or something off the floor?",
+          "general": true
+        },
+        {
+          "text": "What is a chore at home that you will do anything to avoid?",
+          "general": true
+        },
+        {
+          "text": "What is something unusual or funny that you are afraid of?",
+          "general": true
+        },
+        {
+          "text": "Have you ever blamed a pet or a sibling for a mess you made?",
+          "general": true
+        },
+        {
+          "text": "What is the funniest face or impression you can make?",
+          "general": true
+        },
+        {
+          "text": "Have you ever picked your nose and wiped it somewhere sneaky?",
+          "general": true
+        },
+        {
+          "text": "What is the most annoying sound a friend or sibling makes?",
+          "general": true
+        },
+        {
+          "text": "What is a habit you have that everyone in your house complains about?",
+          "general": true
+        },
+        {
+          "text": "Have you ever hidden a bad school test or grade from your parents?",
+          "general": false
+        },
+        {
+          "text": "Who is your absolute favorite teacher, and who is the strictest?",
+          "general": false
+        },
+        {
+          "text": "Have you ever faked being sick in the morning just to miss school?",
+          "general": false
+        },
+        {
+          "text": "What is the worst meal served in your school cafeteria?",
+          "general": false
+        },
+        {
+          "text": "Have you ever forgotten to do your homework and copied it five minutes before class?",
+          "general": false
+        },
+        {
+          "text": "Have you ever accidentally called your teacher 'Mom' or 'Dad'?",
+          "general": false
+        },
+        {
+          "text": "What video game or mobile game do you secretly spend way too many hours on?",
+          "general": false
+        },
+        {
+          "text": "Have you ever raged or slammed your controller/keyboard after losing a game?",
+          "general": false
+        },
+        {
+          "text": "What is the funniest thing that has ever happened in your classroom?",
+          "general": false
+        },
+        {
+          "text": "Have you ever pretended to practice an instrument while just staring at the clock?",
+          "general": false
+        },
+        {
+          "text": "Have you ever been sent to the principal's office or had to stay in for recess?",
+          "general": false
+        },
+        {
+          "text": "What YouTube gaming channel or creator do you watch every single day?",
+          "general": false
+        },
+        {
+          "text": "Have you ever traded away a lunch snack you hated for something way better?",
+          "general": false
+        },
+        {
+          "text": "Have you ever lied about your age to play an online game with older friends?",
+          "general": false
+        },
+        {
+          "text": "What is the most ridiculous rumor you ever heard on the school playground?",
+          "general": false
+        }
+      ],
+      "13+": [
+        {
+          "text": "What was your honest first impression of {other} when you first met?",
+          "general": true,
+          "min_players": 2
+        },
+        {
+          "text": "Between {player2} and {player3}, who do you think would be more likely to keep your deepest secret?",
+          "general": true,
+          "min_players": 3
+        },
+        {
+          "text": "What is your daily average phone screen time right now?",
+          "general": true
+        },
+        {
+          "text": "If you had to trade phones with {other} for an entire afternoon, how nervous would you be?",
+          "general": true,
+          "min_players": 2
+        },
+        {
+          "text": "Have you ever accidentally shared the wrong screen or tab while on a Discord call?",
+          "general": true
+        },
+        {
+          "text": "Between {player2} and {player3}, whose playlist would you rather listen to on a 10-hour flight?",
+          "general": true,
+          "min_players": 3
+        },
+        {
+          "text": "Have you ever left {other} on 'Read' or 'Delivered' on purpose because you didn't feel like replying?",
+          "general": true,
+          "min_players": 2
+        },
+        {
+          "text": "What is the most embarrassing search query currently in your browser history?",
+          "general": true
+        },
+        {
+          "text": "What is one thing {other} does that secretly annoys you or makes you laugh?",
+          "general": true,
+          "min_players": 2
+        },
+        {
+          "text": "Have you ever texted something mean about someone to that exact same person by mistake?",
+          "general": true
+        },
+        {
+          "text": "Between {player2} and {player3}, who would you trust more to give you honest fashion advice?",
+          "general": true,
+          "min_players": 3
+        },
+        {
+          "text": "What is the cringiest username or handle you have ever created online?",
+          "general": true
+        },
+        {
+          "text": "Have you ever faked bad Wi-Fi or muted your mic just to leave an awkward voice call?",
+          "general": true
+        },
+        {
+          "text": "What is a rumor or gossip you heard about someone in this group that turned out to be false?",
+          "general": true,
+          "min_players": 2
+        },
+        {
+          "text": "Have you ever stalked someone's profile back to their posts from three years ago?",
+          "general": true
+        },
+        {
+          "text": "If you were forced to switch lives with {other} for a week, what is the first thing you'd change?",
+          "general": true,
+          "min_players": 2
+        },
+        {
+          "text": "What is the dumbest drama you have ever participated in on a group chat?",
+          "general": true
+        },
+        {
+          "text": "Have you ever hidden an in-game purchase or microtransaction from your parents?",
+          "general": true
+        },
+        {
+          "text": "Between {player2} and {player3}, who do you think spends more time getting ready in the morning?",
+          "general": true,
+          "min_players": 3
+        },
+        {
+          "text": "What is the most awkward text exchange you've had that you still cringe about?",
+          "general": true
+        },
+        {
+          "text": "Have you ever created a burner or alternate account to snoop on someone?",
+          "general": true
+        },
+        {
+          "text": "What is a song on your playlist that you would never play out loud in front of {other}?",
+          "general": true,
+          "min_players": 2
+        },
+        {
+          "text": "What was your very first crush, and how awkward were you around them?",
+          "general": true
+        },
+        {
+          "text": "Have you ever taken a screenshot of a private DM and forwarded it to another friend?",
+          "general": true
+        },
+        {
+          "text": "What is one compliment you have always wanted to give {other_gender} but felt too awkward to say?",
+          "general": true,
+          "min_players": 2,
+          "requires_different_gender": true
+        },
+        {
+          "text": "Open your YouTube or Google search bar, type the letter 'A' (or a letter picked by {other}), and read aloud the top 3 suggested recent searches.",
+          "general": true,
+          "min_players": 2
+        },
+        {
+          "text": "Show the group your Discord or messaging direct message list without opening the chats. Who was the last person you messaged outside this room, and why?",
+          "general": true
+        },
+        {
+          "text": "Rank {player2}, {player3}, and {player4} from most reliable to least reliable when playing a game or working on a group task.",
+          "general": true,
+          "min_players": 4
+        },
+        {
+          "text": "Have you ever muted, ignored, or left a voice call or chat with {other} because they were being too loud or annoying?",
+          "general": true,
+          "min_players": 2
+        },
+        {
+          "text": "If the whole group got caught breaking a school or neighborhood rule, who is the very first person you would expect to panic or snitch?",
+          "general": true,
+          "min_players": 3
+        },
+        {
+          "text": "What is something you broke, ruined, or lost in the house that your family still thinks was lost by someone else?",
+          "general": true
+        },
+        {
+          "text": "What is the biggest lie you told your parents about school or grades that they completely believed?",
+          "general": true
+        },
+        {
+          "text": "Which person in this room do you think has the shortest temper when an online match or group plan goes wrong?",
+          "general": true,
+          "min_players": 2
+        },
+        {
+          "text": "What was a complete misconception or wrong assumption you had about {other_gender} before you got to know them properly?",
+          "general": true,
+          "min_players": 2,
+          "requires_different_gender": true
+        },
+        {
+          "text": "If you had to trade personalities with {other_gender} for a full week, what is the one habit of theirs you would refuse to do?",
+          "general": true,
+          "min_players": 2,
+          "requires_different_gender": true
+        },
+        {
+          "text": "If you were forced to sit next to either {player2} or {player3} in your strictest teacher's class for the rest of the school year, who do you pick?",
+          "general": true,
+          "min_players": 3
+        },
+        {
+          "text": "Have you ever started or spread a rumor about someone in our school grade that turned out to be completely false?",
+          "general": true
+        },
+        {
+          "text": "Who in this room would you least want to partner with for an important science or math project that determines your grade?",
+          "general": true,
+          "min_players": 3
+        },
+        {
+          "text": "What is the most awkward or embarrassing thing that has happened to you in the school hallway or cafeteria this year?",
+          "general": true
+        },
+        {
+          "text": "Between {player2} and {player3}, whose group chat humor is actually funny, and whose is completely dry or try-hard?",
+          "general": true,
+          "min_players": 3
+        },
+        {
+          "text": "Have you ever pretended to be sick or stayed in the school nurse's office just to avoid a presentation or test?",
+          "general": true
+        },
+        {
+          "text": "If our entire group of 10 was trapped in a locked school overnight, who would be the first person to cry or lose their mind?",
+          "general": true,
+          "min_players": 4
+        },
+        {
+          "text": "What is one thing people of the opposite gender in our class do that you and your friends constantly make fun of?",
+          "general": true
+        },
+        {
+          "text": "Have you ever borrowed something from a classmate (pen, calculator, hoodie, notes) and never gave it back?",
+          "general": true
+        },
+        {
+          "text": "Who in this room is most likely to act completely different when their crush walks by in the hallway?",
+          "general": true,
+          "min_players": 2
+        },
+        {
+          "text": "Have you ever secretly talked trash or vented about someone in this exact room on a private call or chat?",
+          "general": true,
+          "min_players": 2
+        },
+        {
+          "text": "Who in this room would you be most embarrassed to be seen in public alone with?",
+          "general": true,
+          "min_players": 3
+        },
+        {
+          "text": "Have you ever had a crush on someone currently in this room, or on one of their close friends?",
+          "general": true,
+          "min_players": 2
+        },
+        {
+          "text": "Open your notes app or private drafts right now and read aloud the most unhinged or dramatic sentence you have written.",
+          "general": true
+        },
+        {
+          "text": "If everyone in this room had to vote someone out of the friend group right now, who do you think gets the most votes?",
+          "general": true,
+          "min_players": 4
+        },
+        {
+          "text": "What is the most toxic or manipulative thing you have intentionally done to win an argument or get what you wanted?",
+          "general": true
+        },
+        {
+          "text": "Have you ever checked {other}'s location, online status, or following list to snoop on what they were doing?",
+          "general": true,
+          "min_players": 2
+        },
+        {
+          "text": "Between {player2} and {player3}, who do you think is faking their personality the most to fit in with people?",
+          "general": true,
+          "min_players": 3
+        },
+        {
+          "text": "What is the worst thing you have said behind {other_gender}'s back that you pray they never find out about?",
+          "general": true,
+          "min_players": 2,
+          "requires_different_gender": true
+        },
+        {
+          "text": "Have you ever screenshot a private conversation from someone in this room to show someone else and laugh at it?",
+          "general": true,
+          "min_players": 2
+        },
+        {
+          "text": "If you had to pick one person in this room to never speak to again for the rest of your life, who are you dropping?",
+          "general": true,
+          "min_players": 3
+        },
+        {
+          "text": "What is the most desperate thing you have ever done to get someone's attention online or in person?",
+          "general": true
+        },
+        {
+          "text": "Between {player2} and {player3}, who do you think has the most annoying ego?",
+          "general": true,
+          "min_players": 3
+        },
+        {
+          "text": "Have you ever pretended to like {other} to their face while secretly finding them exhausting to be around?",
+          "general": true,
+          "min_players": 2
+        },
+        {
+          "text": "What is the most illegal or rule-breaking thing you have done without getting caught by parents, police, or teachers?",
+          "general": true
+        },
+        {
+          "text": "What is the most embarrassing, down-bad thing you have done to get your crush's attention or find out who they were talking to?",
+          "general": true
+        },
+        {
+          "text": "Have you ever stalked {other_gender}'s following list, reposts, or Pinterest/Spotify to figure out who their crush or vibe was?",
+          "general": true,
+          "min_players": 2,
+          "requires_different_gender": true
+        },
+        {
+          "text": "Rank the people of the opposite gender in this room from who has the best personality to who has the most exhausting personality.",
+          "general": true,
+          "min_players": 3,
+          "requires_different_gender": true
+        },
+        {
+          "text": "Between {player2} and {player3}, who do you think is objectively more attractive, and why?",
+          "general": true,
+          "min_players": 3
+        },
+        {
+          "text": "Who in this room do you think would be the absolute most toxic person to be in a talking stage with?",
+          "general": true,
+          "min_players": 3
+        },
+        {
+          "text": "If you were forced to slow dance with {other_gender} in front of the entire school, how awkward would you genuinely be on a scale of 1 to 10?",
+          "general": true,
+          "min_players": 2,
+          "requires_different_gender": true
+        },
+        {
+          "text": "Rate {other}'s overall style and aesthetic out of 10, and name one specific thing they could change to increase their score.",
+          "general": true,
+          "min_players": 2
+        },
+        {
+          "text": "On a scale of 1 to 10, rate how good you think your crush outside this room would be as a romantic partner in a real relationship.",
+          "general": true
+        },
+        {
+          "text": "Rate your own overall attractiveness out of 10, and then let {other} tell you what your actual rating is.",
+          "general": true,
+          "min_players": 2
+        },
+        {
+          "text": "On a scale of 1 to 10, rate {other}'s sense of humor. Be completely honest if they are ever dry or try-hard.",
+          "general": true,
+          "min_players": 2
+        },
+        {
+          "text": "Rate {other_gender}'s music taste out of 10 based purely on what you know they listen to.",
+          "general": true,
+          "min_players": 2,
+          "requires_different_gender": true
+        },
+        {
+          "text": "What is one thing {other_gender} wears or does with their hair that you secretly think looks either really good or completely terrible?",
+          "general": true,
+          "min_players": 2,
+          "requires_different_gender": true
+        },
+        {
+          "text": "If you had to pick one person of the opposite gender in this room to go to a school formal dance with strictly as friends, who are you picking?",
+          "general": true,
+          "min_players": 2,
+          "requires_different_gender": true
+        },
+        {
+          "text": "If someone offered to pay for a full date between you and {other_gender}, what is the single biggest reason you would still hesitate to go?",
+          "general": true,
+          "min_players": 2,
+          "requires_different_gender": true
+        },
+        {
+          "text": "What is an annoying habit people of the opposite gender in our friend group have that they think is attractive or cute, but actually isn't?",
+          "general": true
+        },
+        {
+          "text": "On a scale of 1 to 10, how good of a secret-keeper do you think {other_gender} is when it comes to relationship gossip?",
+          "general": true,
+          "min_players": 2,
+          "requires_different_gender": true
+        },
+        {
+          "text": "If you had to set up {other_gender} with someone outside this room, who is the worst, most chaotic person you could realistically pair them with?",
+          "general": true,
+          "min_players": 2,
+          "requires_different_gender": true
+        },
+        {
+          "text": "Who in this room of the opposite gender do you think would be the easiest to manipulate or convince into doing whatever you want?",
+          "general": true,
+          "min_players": 2,
+          "requires_different_gender": true
+        },
+        {
+          "text": "If you had to eliminate one person from our school friend group permanently with zero consequences, who would you choose?",
+          "general": true,
+          "min_players": 3
+        },
+        {
+          "text": "Be dead honest: Have you ever faked having plans just to avoid hanging out with {other}?",
+          "general": true,
+          "min_players": 2
+        },
+        {
+          "text": "What is the single most petty rumor you have ever heard about {other_gender} in school, and did you believe it at the time?",
+          "general": true,
+          "min_players": 2,
+          "requires_different_gender": true
+        },
+        {
+          "text": "Between {player2} and {player3}, who do you think cares way more about popularity and what other people think?",
+          "general": true,
+          "min_players": 3
+        },
+        {
+          "text": "What is something {other_gender} does in class or in front of friends that gives you immediate secondhand embarrassment?",
+          "general": true,
+          "min_players": 2,
+          "requires_different_gender": true
+        }
+      ],
+      "16+": [
+        {
+          "text": "Between {player2} and {player3}, whose dating advice would you trust the least?",
+          "general": true,
+          "min_players": 3
+        },
+        {
+          "text": "What is the biggest red flag you completely ignored because you found someone attractive?",
+          "general": true
+        },
+        {
+          "text": "If you had to set up {other} on a blind date with someone you know, who would you pick for them?",
+          "general": true,
+          "min_players": 2
+        },
+        {
+          "text": "What is a major secret you kept hidden from your parents throughout high school?",
+          "general": true
+        },
+        {
+          "text": "Between {player2} and {player3}, who would be more likely to accidentally leak a massive secret?",
+          "general": true,
+          "min_players": 3
+        },
+        {
+          "text": "Have you ever had a secret romantic thought or crush about {other_gender}?",
+          "general": true,
+          "min_players": 2,
+          "requires_different_gender": true,
+          "romantic": true
+        },
+        {
+          "text": "What is the most catastrophic first date or meetup you have ever experienced?",
+          "general": true
+        },
+        {
+          "text": "Have you ever snuck out or lied about whose house you were sleeping over at?",
+          "general": true
+        },
+        {
+          "text": "If everyone in this room had their private DMs read aloud, whose would be the most chaotic?",
+          "general": true,
+          "min_players": 2
+        },
+        {
+          "text": "What is something completely unethical that you did and got away with scot-free?",
+          "general": true
+        },
+        {
+          "text": "Between {player2} and {player3}, who would you rather have as your legal lawyer in a court case?",
+          "general": true,
+          "min_players": 3
+        },
+        {
+          "text": "What is the pettiest reason you ever broke things off or stopped talking to someone?",
+          "general": true
+        },
+        {
+          "text": "Have you ever talked behind {other}'s back, even if it was just a minor complaint?",
+          "general": true,
+          "min_players": 2
+        },
+        {
+          "text": "What is the most humiliating lie you told that unraveled right in front of people?",
+          "general": true
+        },
+        {
+          "text": "Have you ever stayed in a talking stage for months knowing full well it was going nowhere?",
+          "general": true
+        },
+        {
+          "text": "If you, {player2}, and {player3} were stuck in a horror movie, who gets eliminated first?",
+          "general": true,
+          "min_players": 3
+        },
+        {
+          "text": "Have you ever flirted with someone solely to get free food, rides, or special treatment?",
+          "general": true
+        },
+        {
+          "text": "What is something you pretend to understand solely to impress people in social settings?",
+          "general": true
+        },
+        {
+          "text": "Have you ever gone through someone's unlocked phone without their permission?",
+          "general": true
+        },
+        {
+          "text": "What is your biggest insecurity that you try desperately to overcompensate for?",
+          "general": true
+        },
+        {
+          "text": "What is a rumor about yourself that was 100% true, but you vehemently denied?",
+          "general": true
+        },
+        {
+          "text": "Between {player2} and {player3}, who is more likely to wake up in another country with no memory?",
+          "general": true,
+          "min_players": 3
+        },
+        {
+          "text": "What was your most accurate first impression of {other_gender} when you first met?",
+          "general": true,
+          "min_players": 2,
+          "requires_different_gender": true
+        },
+        {
+          "text": "If you had to erase one person from your past permanently, who would it be?",
+          "general": true
+        },
+        {
+          "text": "What is something you would take a lie detector test right now to prove you didn't do?",
+          "general": true
+        }
+      ]
+    },
+    "dare": {
+      "3+": [
+        {
+          "text": "Make your best loud lion roar at the ceiling.",
+          "general": true
+        },
+        {
+          "text": "Spin in a circle 3 times, then strike a superhero freeze pose.",
+          "general": true
+        },
+        {
+          "text": "Show your biggest, silliest smile without blinking for 10 seconds.",
+          "general": true
+        },
+        {
+          "text": "Make the goofiest animal noise you can invent on the spot.",
+          "general": true
+        },
+        {
+          "text": "Try to balance on one foot for 8 seconds without falling over.",
+          "general": true
+        },
+        {
+          "text": "Pretend to walk on a tightrope across the living room carpet.",
+          "general": true
+        },
+        {
+          "text": "High-five everyone in the room with both hands at once.",
+          "general": true
+        },
+        {
+          "text": "Do your fastest silly wiggle dance until someone claps.",
+          "general": true
+        },
+        {
+          "text": "Pretend the floor is made of hot jelly for the next 20 seconds.",
+          "general": true
+        },
+        {
+          "text": "Try to touch your nose with your tongue.",
+          "general": true
+        },
+        {
+          "text": "Give a gentle fist-bump to the player to your right.",
+          "general": true
+        },
+        {
+          "text": "Make a grumpy fish face and stare at the person opposite you.",
+          "general": true
+        },
+        {
+          "text": "Do 5 jumping jacks while shouting your favorite food.",
+          "general": true
+        },
+        {
+          "text": "Pretend to sneeze like an elephant.",
+          "general": true
+        },
+        {
+          "text": "Pretend you are blowing up an enormous invisible balloon until it pops.",
+          "general": true
+        },
+        {
+          "text": "Act like an airplane flying through turbulent clouds for 15 seconds.",
+          "general": true
+        },
+        {
+          "text": "Walk completely backward to the nearest doorway and tap it.",
+          "general": true
+        },
+        {
+          "text": "Imitate an alarm clock ringing loudly until someone taps your shoulder.",
+          "general": true
+        },
+        {
+          "text": "Pretend you are swimming through sticky peanut butter.",
+          "general": true
+        },
+        {
+          "text": "Do a slow-motion high kick like an action star.",
+          "general": true
+        },
+        {
+          "text": "Waddle like a penguin from one side of the room to the other.",
+          "general": false
+        },
+        {
+          "text": "Flap your arms and make chicken sounds for 10 seconds.",
+          "general": false
+        },
+        {
+          "text": "Hop around like a frog and ribbit at every person in the room.",
+          "general": false
+        },
+        {
+          "text": "Pretend you are a robot whose batteries are slowly running out.",
+          "general": false
+        },
+        {
+          "text": "Crawl like a baby and pretend to drink from an imaginary bottle.",
+          "general": false
+        }
+      ],
+      "7+": [
+        {
+          "text": "Speak in an alien or robot voice for the next 2 rounds.",
+          "general": true
+        },
+        {
+          "text": "Balance a soft cushion on your head while walking in a full circle.",
+          "general": true
+        },
+        {
+          "text": "Try to say the alphabet backward starting from the letter J.",
+          "general": true
+        },
+        {
+          "text": "Do an impression of someone who just stepped on a freezing cold floor barefoot.",
+          "general": true
+        },
+        {
+          "text": "Hold an ice cube in your hand until it melts, or for a full 45 seconds.",
+          "general": true
+        },
+        {
+          "text": "Act like a mime trapped inside an invisible glass box for 30 seconds.",
+          "general": true
+        },
+        {
+          "text": "Hum a popular theme song and don't stop until someone guesses it.",
+          "general": true
+        },
+        {
+          "text": "Do 10 rapid jumping jacks while singing your favorite song loudly.",
+          "general": true
+        },
+        {
+          "text": "Walk like a crab across the room without letting your knees touch the ground.",
+          "general": true
+        },
+        {
+          "text": "Do a dramatic reading of the ingredients on the back of a snack packet.",
+          "general": true
+        },
+        {
+          "text": "Speak in rhymes only for your next 3 sentences.",
+          "general": true
+        },
+        {
+          "text": "Spin around 5 times and then attempt to walk a straight line across the room.",
+          "general": true
+        },
+        {
+          "text": "Do your best slow-motion matrix dodge like you are avoiding dodgeballs.",
+          "general": true
+        },
+        {
+          "text": "Invent an elaborate 5-step secret handshake with {other}.",
+          "general": true,
+          "min_players": 2
+        },
+        {
+          "text": "Have an intense left-handed arm wrestling match with {other}.",
+          "general": true,
+          "min_players": 2
+        },
+        {
+          "text": "Imitate a teacher who is trying to quiet down a completely chaotic classroom.",
+          "general": false
+        },
+        {
+          "text": "Pretend you are an online gaming streamer raging about a huge lag spike.",
+          "general": false
+        },
+        {
+          "text": "Act out running for the school bus when you are already 5 minutes late.",
+          "general": false
+        },
+        {
+          "text": "Act like an NPC in a video game offering a ridiculous quest to {other}.",
+          "general": false,
+          "min_players": 2
+        },
+        {
+          "text": "Imitate a student who forgot to bring their homework and is making up wild excuses.",
+          "general": false
+        },
+        {
+          "text": "Do your best impression of your parents telling you to clean your bedroom right now.",
+          "general": false
+        },
+        {
+          "text": "Re-enact your favorite victory dance from Roblox or Fortnite.",
+          "general": false
+        },
+        {
+          "text": "Act like a kid trying to sneak a cookie from the kitchen without getting caught.",
+          "general": false
+        },
+        {
+          "text": "Pretend you are the school principal making an urgent morning announcement.",
+          "general": false
+        },
+        {
+          "text": "Pretend your controller just died in the final seconds of a championship match.",
+          "general": false
+        }
+      ],
+      "13+": [
+        {
+          "text": "Stare directly into {other}'s eyes for 30 seconds. First person to blink, laugh, or look away loses.",
+          "general": true,
+          "min_players": 2
+        },
+        {
+          "text": "Do an intense thumb war against {other}.",
+          "general": true,
+          "min_players": 2
+        },
+        {
+          "text": "High-five everyone in the room as fast as possible within 5 seconds.",
+          "general": true,
+          "min_players": 2
+        },
+        {
+          "text": "Stand back-to-back with {other}, link arms, and try to sit down and stand back up without using hands.",
+          "general": true,
+          "min_players": 2
+        },
+        {
+          "text": "Recite dramatic rap or pop lyrics directly to {other} like a serious Shakespearean monologue.",
+          "general": true,
+          "min_players": 2
+        },
+        {
+          "text": "Compliment shootout: Alternate rapid-fire compliments with {other} until someone hesitates for over 3 seconds.",
+          "general": true,
+          "min_players": 2
+        },
+        {
+          "text": "Show the group your daily phone screen-time report and top 3 battery-draining apps.",
+          "general": true
+        },
+        {
+          "text": "Show the room your 5 most recently used emojis without giving any explanation.",
+          "general": true
+        },
+        {
+          "text": "Play the first 10 seconds of your most recently played song on Spotify / Apple Music or show your latest YouTube video.",
+          "general": true
+        },
+        {
+          "text": "Let {other} inspect the last 5 photos in your camera roll (you get 1 veto pass).",
+          "general": true,
+          "min_players": 2
+        },
+        {
+          "text": "Read aloud the last 3 text messages you sent, and let the group guess who received them.",
+          "general": true
+        },
+        {
+          "text": "Show the group your YouTube or TikTok watch history from the past hour.",
+          "general": true
+        },
+        {
+          "text": "Swap watches or bracelets with {other} for the next 3 rounds.",
+          "general": true,
+          "min_players": 2
+        },
+        {
+          "text": "Wear your shoes on the opposite feet until your next turn.",
+          "general": true
+        },
+        {
+          "text": "Swap one shoe with {other} so you both walk with an uneven limp for the next round.",
+          "general": true,
+          "min_players": 2
+        },
+        {
+          "text": "Let {other} draw a small, harmless doodle with a washable marker on your arm.",
+          "general": true,
+          "min_players": 2
+        },
+        {
+          "text": "Call a close friend, sing them 'Happy Birthday' with full enthusiasm even though it's not their birthday, then hang up.",
+          "general": true
+        },
+        {
+          "text": "Send a 5-second voice memo of maniacal villain laughter to a close group chat.",
+          "general": true
+        },
+        {
+          "text": "Send a harmless, room-moderated funny reaction gif to the 4th person on your chat list.",
+          "general": true
+        },
+        {
+          "text": "Deliver a dramatic movie breakup speech directed at an inanimate water bottle or chair.",
+          "general": true
+        },
+        {
+          "text": "Pretend to be {other} and answer the room's questions in character for 1 minute.",
+          "general": true,
+          "min_players": 2
+        },
+        {
+          "text": "Give a 45-second high-energy motivational speech as if you are coaching an underdog sports team.",
+          "general": true
+        },
+        {
+          "text": "Act as {other}'s dedicated personal bodyguard for the next 2 rounds, clearing paths whenever they move.",
+          "general": true,
+          "min_players": 2
+        },
+        {
+          "text": "Stand 6 inches away from {other} and answer 3 rapid-fire questions without breaking eye contact.",
+          "general": true,
+          "min_players": 2
+        },
+        {
+          "text": "Deliver a ridiculously cheesy compliment or job interview pitch to {other_gender} with deadpan seriousness.",
+          "general": true,
+          "min_players": 2,
+          "requires_different_gender": true
+        },
+        {
+          "text": "Let {other} send a single voice note of you making a bizarre animal noise to your most active group chat, with no explanation for 5 minutes.",
+          "general": true,
+          "min_players": 2
+        },
+        {
+          "text": "Open your camera roll, close your eyes, scroll randomly for 5 seconds, and let {other} tap one photo that you must show to everyone.",
+          "general": true,
+          "min_players": 2
+        },
+        {
+          "text": "Give a completely honest 30-second review of {other}'s fashion sense or aesthetic, holding nothing back.",
+          "general": true,
+          "min_players": 2
+        },
+        {
+          "text": "Let {other_gender} choose a funny or ridiculous nickname for you that everyone must call you for the next 3 rounds.",
+          "general": true,
+          "min_players": 2,
+          "requires_different_gender": true
+        },
+        {
+          "text": "Let the group select one person in the room: you have to imitate how they walk, talk, and act when they get annoyed until someone guesses who it is.",
+          "general": true,
+          "min_players": 4
+        },
+        {
+          "text": "Swap shoes with {other} of the opposite gender for the next 2 rounds.",
+          "general": true,
+          "min_players": 2,
+          "requires_different_gender": true
+        },
+        {
+          "text": "Text a mutual school friend who isn't here: 'Why did the teacher ask about you today?' and don't reply for 3 minutes.",
+          "general": true
+        },
+        {
+          "text": "Do your best, dramatic impression of our strictest teacher catching someone texting in the back of the class.",
+          "general": true
+        },
+        {
+          "text": "Give a 30-second campaign speech explaining why {other} should be voted Class President, pointing out their weirdest flaws as strengths.",
+          "general": true,
+          "min_players": 2
+        },
+        {
+          "text": "Let {player2} and {player3} pose you like an awkward school yearbook portrait and hold that exact freeze pose for 30 seconds.",
+          "general": true,
+          "min_players": 3
+        },
+        {
+          "text": "Speak in a super formal, British royal accent whenever addressing {other_gender} for the next 2 rounds.",
+          "general": true,
+          "min_players": 2,
+          "requires_different_gender": true
+        },
+        {
+          "text": "Hand your phone to {other} and let them play a random 5-second audio snippet from your recently played playlist out loud.",
+          "general": true,
+          "min_players": 2
+        },
+        {
+          "text": "Hand your phone to {other} and let them look through your recently deleted photos folder for 20 seconds.",
+          "general": true,
+          "min_players": 2
+        },
+        {
+          "text": "Text someone of your choice outside this room: 'Can I confess something to you?' and wait in dead silence for their reply without following up for 5 minutes.",
+          "general": true
+        },
+        {
+          "text": "Let {player2} open your main messaging app and pick one person for you to send a single question mark '?' to right now.",
+          "general": true,
+          "min_players": 3
+        },
+        {
+          "text": "Show your blocked list on Instagram, Snapchat, or WhatsApp to the person to your left and explain why the top person is on there.",
+          "general": true,
+          "min_players": 2
+        },
+        {
+          "text": "Let {other} read aloud your last 3 sent voice notes to anyone.",
+          "general": true,
+          "min_players": 2
+        },
+        {
+          "text": "Look directly at {other_gender} and tell them the single most brutally honest critique you have about their vibe or attitude.",
+          "general": true,
+          "min_players": 2,
+          "requires_different_gender": true
+        },
+        {
+          "text": "Call a friend outside this room on speaker and tell them: 'Hey, honestly, why do people talk bad about me behind my back?' and listen to their unfiltered response.",
+          "general": true
+        },
+        {
+          "text": "Let {other} change your profile bio or status on Discord or Instagram to anything they want for the next 30 minutes.",
+          "general": true,
+          "min_players": 2
+        },
+        {
+          "text": "Admit the single most shameful secret habit you have when you are completely alone in your room.",
+          "general": true
+        },
+        {
+          "text": "Let {player2} hold your unlocked phone and inspect your search suggestions across all apps for 30 seconds.",
+          "general": true,
+          "min_players": 3
+        },
+        {
+          "text": "Look directly at {other}, pause for 5 seconds, give them an honest rating out of 10 on their outfit today, and justify your score.",
+          "general": true,
+          "min_players": 2
+        },
+        {
+          "text": "Let {other_gender} rate your current haircut out of 10, and you cannot argue or defend yourself against their critique.",
+          "general": true,
+          "min_players": 2,
+          "requires_different_gender": true
+        },
+        {
+          "text": "Send a text to a mutual friend outside this room asking: 'On a scale of 1 to 10, how chaotic am I?' and read their exact number out loud.",
+          "general": true
+        },
+        {
+          "text": "Look directly at {other_gender} and give a 20-second pitch on why they would be an absolute nightmare to be in a group project with.",
+          "general": true,
+          "min_players": 2,
+          "requires_different_gender": true
+        },
+        {
+          "text": "Hand your phone to {other_gender} and let them read the contact nicknames you have saved for people in your messaging app.",
+          "general": true,
+          "min_players": 2,
+          "requires_different_gender": true
+        },
+        {
+          "text": "Give {other_gender} your jacket, hoodie, cap, or watch to wear for the next 3 rounds (if unavailable, swap phone cases; if still unavailable, swap one shoe with them).",
+          "general": true,
+          "min_players": 2,
+          "requires_different_gender": true
+        },
+        {
+          "text": "Let {other_gender} take a goofy, unedited selfie using your phone camera and set it as your lock screen until the end of the game.",
+          "general": true,
+          "min_players": 2,
+          "requires_different_gender": true
+        },
+        {
+          "text": "Pretend {other_gender} is a demanding customer at a fast-food restaurant and take their ridiculous custom order in character for 30 seconds.",
+          "general": true,
+          "min_players": 2,
+          "requires_different_gender": true
+        },
+        {
+          "text": "Have a thumb war against {other_gender} while maintaining uninterrupted eye contact the entire time.",
+          "general": true,
+          "min_players": 2,
+          "requires_different_gender": true
+        },
+        {
+          "text": "Go around the room and assign each person one school subject or video game character that perfectly matches their personality, and explain why.",
+          "general": true,
+          "min_players": 3
+        },
+        {
+          "text": "Rank everyone in this room from who would panic the hardest to who would stay the calmest if the fire alarm suddenly went off.",
+          "general": true,
+          "min_players": 3
+        },
+        {
+          "text": "Give {other} an honest rating out of 10 on how good they are at keeping secrets, giving an example to justify the score.",
+          "general": true,
+          "min_players": 2
+        },
+        {
+          "text": "Point to the person in the room who you think has the most unhinged music taste and make them play 5 seconds of their favorite song.",
+          "general": true,
+          "min_players": 2
+        },
+        {
+          "text": "Let {other_gender} look through your saved audio or saved reels folder for 15 seconds and pick one to play out loud on low volume.",
+          "general": true,
+          "min_players": 2,
+          "requires_different_gender": true
+        },
+        {
+          "text": "Open your battery settings and show {other} which social media app you spent the most screen time on today.",
+          "general": true,
+          "min_players": 2
+        },
+        {
+          "text": "Show the group your most recently used sticker pack or GIF search history without hiding anything.",
+          "general": true
+        },
+        {
+          "text": "Let {other_gender} pick any unread message in your notification bar and read it out loud to the room.",
+          "general": true,
+          "min_players": 2,
+          "requires_different_gender": true
+        },
+        {
+          "text": "Swap phones with {other} for 30 seconds while both devices stay on the home screen; neither of you can lock the screen.",
+          "general": true,
+          "min_players": 2
+        },
+        {
+          "text": "Call a mutual school friend on speaker, say '{other_gender} told me to tell you that you are acting weird lately', and stay completely silent.",
+          "general": true,
+          "min_players": 2,
+          "requires_different_gender": true
+        },
+        {
+          "text": "Show {other_gender} your most recent direct message thread on Instagram or Snapchat for 10 seconds without scrolling.",
+          "general": true,
+          "min_players": 2,
+          "requires_different_gender": true
+        },
+        {
+          "text": "Let {player2} and {player3} choose an emoji that you have to comment under {other_gender}'s most recent social media post.",
+          "general": true,
+          "min_players": 3,
+          "requires_different_gender": true
+        },
+        {
+          "text": "Hand your phone to {other} and let them read the titles of your last 5 saved bookmarks or open browser tabs.",
+          "general": true,
+          "min_players": 2
+        },
+        {
+          "text": "Let {other_gender} send a single random letter (like 'W' or 'K') to the 3rd person on your chat list without explaining it for 5 minutes.",
+          "general": true,
+          "min_players": 2,
+          "requires_different_gender": true
+        },
+        {
+          "text": "Maintain a completely straight face while {other_gender} reads your most cringe middle-school photo or old username out loud.",
+          "general": true,
+          "min_players": 2,
+          "requires_different_gender": true
+        },
+        {
+          "text": "Swap one item of stationery or an accessory (watch, ring, bracelet) with {other_gender} and keep it until tomorrow's school day ends.",
+          "general": true,
+          "min_players": 2,
+          "requires_different_gender": true
+        },
+        {
+          "text": "Give {other} your phone and let them search your name in your chat search bar, reading aloud the first message that mentions you.",
+          "general": true,
+          "min_players": 2
+        },
+        {
+          "text": "Let {other_gender} re-style your hair into the funniest style they can create in 30 seconds, and leave it like that for the next round.",
+          "general": true,
+          "min_players": 2,
+          "requires_different_gender": true
+        },
+        {
+          "text": "Let {other_gender} scroll through your blocked accounts list on Instagram or Snapchat and pick one person for you to unblock for 10 minutes.",
+          "general": true,
+          "min_players": 2,
+          "requires_different_gender": true
+        },
+        {
+          "text": "Show the person to your left your private photo album or 'Hidden' album counter (just the number of hidden photos, without opening them).",
+          "general": true,
+          "min_players": 2
+        },
+        {
+          "text": "Open your direct messages with {other_gender}, scroll to the very top/first message you ever sent them, and read it aloud.",
+          "general": true,
+          "min_players": 2,
+          "requires_different_gender": true
+        },
+        {
+          "text": "Let {other_gender} look through your saved audio or TikTok/Reels reposts tab for 30 seconds with no pass allowed.",
+          "general": true,
+          "min_players": 2,
+          "requires_different_gender": true
+        },
+        {
+          "text": "Hand your phone to {other} and let them draft an unsent text to anyone on your contact list; you have to look at it and decide whether to send it or do 20 pushups.",
+          "general": true,
+          "min_players": 2
+        },
+        {
+          "text": "Let {other_gender} read aloud the last draft or unsent message sitting in your notes app or text bar.",
+          "general": true,
+          "min_players": 2,
+          "requires_different_gender": true
+        },
+        {
+          "text": "Show the entire room your screen-time breakdown specifically for late-night hours (12 AM – 5 AM).",
+          "general": true
+        },
+        {
+          "text": "Let {other_gender} look through your recently searched accounts on Instagram or Snapchat with everyone watching your screen.",
+          "general": true,
+          "min_players": 2,
+          "requires_different_gender": true
+        },
+        {
+          "text": "Give {other} a firm, formal 2-handed business handshake while maintaining deadpan eye contact and saying 'A pleasure doing business with you' without laughing.",
+          "general": true,
+          "min_players": 2
+        },
+        {
+          "text": "Stand back-to-back with {other_gender}, link your elbows together, and try to sit all the way down on the floor and stand back up without letting go.",
+          "general": true,
+          "min_players": 2,
+          "requires_different_gender": true
+        },
+        {
+          "text": "Do a 10-second fast high-five clap routine with {other_gender} alternating palms, backs of hands, and fist bumps without messing up.",
+          "general": true,
+          "min_players": 2,
+          "requires_different_gender": true
+        },
+        {
+          "text": "Let {other} guide you across the room while you keep your eyes completely closed, using only one hand resting lightly on their shoulder.",
+          "general": true,
+          "min_players": 2
+        },
+        {
+          "text": "Give {other_gender} a completely silent, stationary hug for exactly 7 seconds while {player2} counts out loud.",
+          "general": true,
+          "min_players": 3,
+          "requires_different_gender": true
+        },
+        {
+          "text": "Sit back-to-back on the floor with {other_gender} in total silence for 30 seconds while the room can ask you 2 questions.",
+          "general": true,
+          "min_players": 2,
+          "requires_different_gender": true
+        },
+        {
+          "text": "Hold your palms flat and hovering super close to {other_gender}'s palms (without touching) for 15 seconds while having a normal casual conversation.",
+          "general": true,
+          "min_players": 2,
+          "requires_different_gender": true
+        },
+        {
+          "text": "Let {other_gender} fix or adjust your collar, hoodie, or hair while you stand completely still (no eye contact required).",
+          "general": true,
+          "min_players": 2,
+          "requires_different_gender": true
+        },
+        {
+          "text": "Perform dramatic, over-the-top movie CPR on a pillow or sofa cushion for {other}, shouting 'Stay with me! Don't you dare die on me!' with full theatrical intensity.",
+          "general": true,
+          "min_players": 2
+        },
+        {
+          "text": "Pretend {other} is a medical instructor testing you: perform completely inaccurate, funny CPR on an inanimate backpack while singing the chorus of a pop song at top volume.",
+          "general": true,
+          "min_players": 2
+        },
+        {
+          "text": "Pretend {other} has fainted: perform dramatic movie fake CPR on them (dont apply too much force).",
+          "general": true,
+          "min_players": 2
+        }
+      ],
+      "16+": [
+        {
+          "text": "Let {other} browse your unlocked phone for exactly 15 seconds while you watch.",
+          "general": true,
+          "min_players": 2
+        },
+        {
+          "text": "Let {other} hold your wrist and 'take your pulse' while asking you 2 awkward questions you must answer honestly.",
+          "general": true,
+          "min_players": 2
+        },
+        {
+          "text": "Post a harmless, room-moderated one-line status or story update chosen by the group.",
+          "general": true
+        },
+        {
+          "text": "Swap shoes completely with anyone in the room for the rest of the game.",
+          "general": true,
+          "min_players": 2
+        },
+        {
+          "text": "Let {other} draw a silly mustache on your face using a washable marker.",
+          "general": true,
+          "min_players": 2
+        },
+        {
+          "text": "Call a family member and say 'Hello?' repeatedly like you can't hear them, then hang up after 30 seconds.",
+          "general": true
+        },
+        {
+          "text": "Close your eyes: other players can either touch your hair or very lightly tap your shoulder; guess who did it.",
+          "general": true,
+          "min_players": 2
+        },
+        {
+          "text": "Hold a 10-second silent hug with {other} without anyone in the room laughing.",
+          "general": true,
+          "min_players": 2
+        },
+        {
+          "text": "Text a close friend: 'We need to clear the air about yesterday...' wait 2 minutes, then text 'Never mind, wrong chat!'.",
+          "general": true
+        },
+        {
+          "text": "Perform an over-the-top dramatic soap-opera death scene collapsing onto the floor.",
+          "general": true
+        },
+        {
+          "text": "Let the group review your blocked contacts list and briefly explain why the top person ended up there.",
+          "general": true
+        },
+        {
+          "text": "Hand your phone to {other} and let them read your most recent DM thread with a friend.",
+          "general": true,
+          "min_players": 2
+        },
+        {
+          "text": "Give a 2-minute TED Talk defending a completely unhinged conspiracy theory invented on the spot.",
+          "general": true
+        },
+        {
+          "text": "Show your online shopping cart or order history to the group.",
+          "general": true
+        },
+        {
+          "text": "Deliver your smoothest, most ridiculous compliment pitch to {other_gender} without laughing.",
+          "general": true,
+          "min_players": 2,
+          "requires_different_gender": true
+        },
+        {
+          "text": "Rank {player2} and {player3} on who would be worse at surviving 48 hours alone in the wilderness.",
+          "general": true,
+          "min_players": 3
+        },
+        {
+          "text": "Let {other} inspect your battery health and screen time report for 30 seconds.",
+          "general": true,
+          "min_players": 2
+        },
+        {
+          "text": "Do an interpretive dance expressing the exact emotional feeling of having your heart crushed.",
+          "general": true
+        },
+        {
+          "text": "Speak only in philosophical questions until your next turn comes around.",
+          "general": true
+        },
+        {
+          "text": "Eat a spoonful of the strongest condiment in the kitchen (mustard, hot sauce, or lemon juice).",
+          "general": true
+        },
+        {
+          "text": "Admit the most petty grudge you are currently holding against someone in your life.",
+          "general": true
+        },
+        {
+          "text": "Share the most cringe voice note or draft currently sitting in your messaging app.",
+          "general": true
+        },
+        {
+          "text": "Re-enact your most humiliating romantic failure with {other} playing the other person.",
+          "general": true,
+          "min_players": 2
+        },
+        {
+          "text": "Let the player to your left send a thumbs-down emoji to the last photo someone sent you in DMs.",
+          "general": true,
+          "min_players": 2
+        },
+        {
+          "text": "Act like an undercover spy speaking into a hidden wire in your collar for the next 2 minutes.",
+          "general": true
+        }
+      ]
+    }
+  },
+  "never_have_i_ever": {
+    "3+": [
+      {
+        "text": "Never have I ever fallen asleep while eating dinner.",
+        "general": false
+      },
+      {
+        "text": "Never have I ever thrown my food onto the floor on purpose.",
+        "general": false
+      },
+      {
+        "text": "Never have I ever refused to take off my favorite costume for bedtime.",
+        "general": false
+      },
+      {
+        "text": "Never have I ever hidden my veggies under a napkin so I wouldn't have to eat them.",
+        "general": false
+      },
+      {
+        "text": "Never have I ever cried because my juice was in the wrong colored cup.",
+        "general": false
+      },
+      {
+        "text": "Never have I ever tasted pet food or dog biscuits out of curiosity.",
+        "general": true
+      },
+      {
+        "text": "Never have I ever pretended to be a dinosaur in the middle of a grocery store.",
+        "general": true
+      },
+      {
+        "text": "Never have I ever gotten gum or candy stuck in my hair.",
+        "general": true
+      },
+      {
+        "text": "Never have I ever tried to talk to a bird or squirrel in the yard.",
+        "general": true
+      },
+      {
+        "text": "Never have I ever fallen out of bed in the middle of the night.",
+        "general": true
+      },
+      {
+        "text": "Never have I ever eaten a raw piece of spaghetti.",
+        "general": true
+      },
+      {
+        "text": "Never have I ever made a funny face in a big mirror to scare myself.",
+        "general": true
+      },
+      {
+        "text": "Never have I ever drawn on my own arms or legs with markers.",
+        "general": true
+      },
+      {
+        "text": "Never have I ever tried to catch a fly with my bare hands.",
+        "general": true
+      },
+      {
+        "text": "Never have I ever worn my shoes on the completely wrong feet all day.",
+        "general": true
+      },
+      {
+        "text": "Never have I ever jumped off the couch pretending to fly with a blanket cape.",
+        "general": true
+      },
+      {
+        "text": "Never have I ever hidden inside a cardboard box for fun.",
+        "general": true
+      },
+      {
+        "text": "Never have I ever spilled milk all over the table while trying to pour it.",
+        "general": true
+      },
+      {
+        "text": "Never have I ever licked an ice cube until it stuck to my tongue.",
+        "general": true
+      },
+      {
+        "text": "Never have I ever pretended to sleep so an adult would carry me.",
+        "general": true
+      },
+      {
+        "text": "Never have I ever run around the house with socks sliding on the floor.",
+        "general": true
+      },
+      {
+        "text": "Never have I ever tried to whistle and only blown spit bubbles.",
+        "general": true
+      },
+      {
+        "text": "Never have I ever gotten an ice cream brain freeze.",
+        "general": true
+      },
+      {
+        "text": "Never have I ever accidentally stepped into a mud puddle with fresh clean shoes.",
+        "general": true
+      },
+      {
+        "text": "Never have I ever burped super loud and giggled about it.",
+        "general": true
+      }
+    ],
+    "7+": [
+      {
+        "text": "Never have I ever eaten food off the floor well past the 5-second rule.",
+        "general": true
+      },
+      {
+        "text": "Never have I ever blamed a weird smell or broken item on the family dog.",
+        "general": true
+      },
+      {
+        "text": "Never have I ever accidentally walked into a glass sliding door or screen.",
+        "general": true
+      },
+      {
+        "text": "Never have I ever hidden my messy room clutter by stuffing it all under the bed or closet.",
+        "general": true
+      },
+      {
+        "text": "Never have I ever sneaked snacks into my room in the middle of the night.",
+        "general": true
+      },
+      {
+        "text": "Never have I ever stayed up hours past bedtime playing games under the blanket.",
+        "general": true
+      },
+      {
+        "text": "Never have I ever had a nightmare about being chased by something silly.",
+        "general": true
+      },
+      {
+        "text": "Never have I ever accidentally sprayed water or soda through my nose from laughing too hard.",
+        "general": true
+      },
+      {
+        "text": "Never have I ever accidentally waved back at someone who was waving to the person behind me.",
+        "general": true
+      },
+      {
+        "text": "Never have I ever tried to do a cool trick on a bicycle or scooter and crashed immediately.",
+        "general": true
+      },
+      {
+        "text": "Never have I ever pretended to be sick to stay home from school on a test day.",
+        "general": false
+      },
+      {
+        "text": "Never have I ever forgotten my backpack, lunch, or homework at home.",
+        "general": false
+      },
+      {
+        "text": "Never have I ever forged a parent's signature on a permission slip or bad test.",
+        "general": false
+      },
+      {
+        "text": "Never have I ever gotten in trouble for talking or passing notes during class.",
+        "general": false
+      },
+      {
+        "text": "Never have I ever lost a library book or school textbook and panicked.",
+        "general": false
+      },
+      {
+        "text": "Never have I ever raged and quit an online match in Roblox, Minecraft, or Fortnite.",
+        "general": false
+      },
+      {
+        "text": "Never have I ever pretended my microphone was broken so I wouldn't have to answer in class.",
+        "general": false
+      },
+      {
+        "text": "Never have I ever accidentally brought a toy or contraband item to school and got it confiscated.",
+        "general": false
+      },
+      {
+        "text": "Never have I ever had my teacher call my parents after school.",
+        "general": false
+      },
+      {
+        "text": "Never have I ever secretly played games on a school computer instead of doing the assignment.",
+        "general": false
+      },
+      {
+        "text": "Never have I ever tripped on the stairs in front of a giant crowd of students.",
+        "general": false
+      },
+      {
+        "text": "Never have I ever spent all my lunch money on sugary snacks instead of real food.",
+        "general": false
+      },
+      {
+        "text": "Never have I ever cheered when a teacher announced a pop quiz was cancelled.",
+        "general": false
+      },
+      {
+        "text": "Never have I ever accidentally walked into the wrong classroom and sat down.",
+        "general": false
+      },
+      {
+        "text": "Never have I ever copied someone else's answers during a spelling or math test.",
+        "general": false
+      }
+    ],
+    "13+": [
+      {
+        "text": "Never have I ever stayed up past 4 AM scrolling mindlessly on social media.",
+        "general": true
+      },
+      {
+        "text": "Never have I ever left someone on 'Read' for days because I had no energy to craft a reply.",
+        "general": true
+      },
+      {
+        "text": "Never have I ever accidentally started a voice or video call with someone while stalking their profile.",
+        "general": true
+      },
+      {
+        "text": "Never have I ever shared my screen on Discord and accidentally exposed something embarrassing.",
+        "general": true
+      },
+      {
+        "text": "Never have I ever sent a risky text and immediately turned my phone on airplane mode or hid it under a pillow.",
+        "general": true
+      },
+      {
+        "text": "Never have I ever created an alternate account just to spy on an ex or former friend's social media.",
+        "general": true
+      },
+      {
+        "text": "Never have I ever ghosted someone because the conversation got too dry or awkward.",
+        "general": true
+      },
+      {
+        "text": "Never have I ever lied about having seen a classic movie or played a trending game to seem cool.",
+        "general": true
+      },
+      {
+        "text": "Never have I ever pretended to be listening on a call while playing a full game on another screen.",
+        "general": true
+      },
+      {
+        "text": "Never have I ever taken a screenshot of someone's snap or story and immediately panicked hoping it didn't notify them.",
+        "general": true
+      },
+      {
+        "text": "Never have I ever lied about my age online to gain access to a platform or Discord server.",
+        "general": true
+      },
+      {
+        "text": "Never have I ever deleted a post after 10 minutes because it didn't get enough likes or engagement.",
+        "general": true
+      },
+      {
+        "text": "Never have I ever spent real money on in-game cosmetics or skins that I now completely regret.",
+        "general": true
+      },
+      {
+        "text": "Never have I ever practiced an argument or speech in the shower with imaginary people.",
+        "general": true
+      },
+      {
+        "text": "Never have I ever pretended to be busy with homework just to decline an invite to hang out.",
+        "general": true
+      },
+      {
+        "text": "Never have I ever had someone catch me taking a sneaky picture of them or something nearby.",
+        "general": true
+      },
+      {
+        "text": "Never have I ever used a fake sickness excuse to ditch plans and then accidentally posted an active story.",
+        "general": true
+      },
+      {
+        "text": "Never have I ever had a crush on an animated character or fictional game protagonist.",
+        "general": true
+      },
+      {
+        "text": "Never have I ever sent a message to the exact group chat that the message was complaining about.",
+        "general": true
+      },
+      {
+        "text": "Never have I ever checked someone's location on Snap Maps or Find My just to see what they were doing.",
+        "general": true
+      },
+      {
+        "text": "Never have I ever stalked someone's Spotify listening activity to see their vibe.",
+        "general": true
+      },
+      {
+        "text": "Never have I ever walked into a lamppost, doorframe, or wall while staring down at my phone.",
+        "general": true
+      },
+      {
+        "text": "Never have I ever made up a fake boyfriend or girlfriend to impress an online friend.",
+        "general": true
+      },
+      {
+        "text": "Never have I ever stayed on a FaceTime call for more than 8 hours straight.",
+        "general": true
+      },
+      {
+        "text": "Never have I ever muted a group chat forever because the spam was driving me insane.",
+        "general": true
+      },
+      {
+        "text": "Never have I ever had a crush on someone who was currently in a talking stage or dating a friend.",
+        "general": true
+      },
+      {
+        "text": "Never have I ever checked someone's active location and showed up to where they were pretending it was a total coincidence.",
+        "general": true
+      },
+      {
+        "text": "Never have I ever pretended to be someone's close friend just to get closer to their friend or crush.",
+        "general": true
+      },
+      {
+        "text": "Never have I ever listened to someone's private conversation through a door or over a muted call.",
+        "general": true
+      },
+      {
+        "text": "Never have I ever talked massive trash about someone in a group chat right after they left the room.",
+        "general": true
+      }
+    ],
+    "16+": [
+      {
+        "text": "Never have I ever snuck out of my house late at night without my parents knowing.",
+        "general": true
+      },
+      {
+        "text": "Never have I ever been in a car with someone driving recklessly just to show off.",
+        "general": true
+      },
+      {
+        "text": "Never have I ever gone on a date that was so bad I considered faking an emergency to leave early.",
+        "general": true
+      },
+      {
+        "text": "Never have I ever flirted with someone purely to get free admission, food, or rides.",
+        "general": true
+      },
+      {
+        "text": "Never have I ever lied to my parents about who I was with and where I was going.",
+        "general": true
+      },
+      {
+        "text": "Never have I ever stalked an ex's new partner across every single platform.",
+        "general": true
+      },
+      {
+        "text": "Never have I ever stayed in a talking stage for months knowing full well it was going nowhere.",
+        "general": true
+      },
+      {
+        "text": "Never have I ever had an awkward romantic experience that I still cringe about every time I shower.",
+        "general": true
+      },
+      {
+        "text": "Never have I ever used someone else's ID or documentation to enter somewhere restricted.",
+        "general": true
+      },
+      {
+        "text": "Never have I ever had police or security question me in public.",
+        "general": true
+      },
+      {
+        "text": "Never have I ever ghosted someone after talking every single day for weeks.",
+        "general": true
+      },
+      {
+        "text": "Never have I ever secretly hated a gift someone gave me and immediately re-gifted or hid it.",
+        "general": true
+      },
+      {
+        "text": "Never have I ever snooped through someone's private text messages when they left their phone unlocked.",
+        "general": true
+      },
+      {
+        "text": "Never have I ever kissed someone whose name I forgot shortly afterward.",
+        "general": true
+      },
+      {
+        "text": "Never have I ever blamed alcohol or being tired for a horrible text message I sent completely sober.",
+        "general": true
+      },
+      {
+        "text": "Never have I ever had a crush on someone who was currently dating a friend.",
+        "general": true
+      },
+      {
+        "text": "Never have I ever lied on my resume or job application to sound significantly more qualified.",
+        "general": true
+      },
+      {
+        "text": "Never have I ever broken an expensive piece of someone else's property and never admitted it was me.",
+        "general": true
+      },
+      {
+        "text": "Never have I ever had a public meltdown or screaming argument at a party or event.",
+        "general": true
+      },
+      {
+        "text": "Never have I ever dated someone my entire friend group explicitly warned me against.",
+        "general": true
+      },
+      {
+        "text": "Never have I ever pretended not to see someone in public and taken a completely different route to avoid them.",
+        "general": true
+      },
+      {
+        "text": "Never have I ever sent a message meant for my partner to a parent or teacher.",
+        "general": true
+      },
+      {
+        "text": "Never have I ever had an intense argument on the internet that lasted multiple days.",
+        "general": true
+      },
+      {
+        "text": "Never have I ever gone through an entire talking stage where we never met in person.",
+        "general": true
+      },
+      {
+        "text": "Never have I ever completely cut someone out of my life without offering any closure or explanation.",
+        "general": true
+      }
+    ]
+  },
+  "would_you_rather": {
+    "3+": [
+      {
+        "text": "Would you rather have a friendly pet dragon that flies or a friendly pet dinosaur that gives rides?",
+        "general": true
+      },
+      {
+        "text": "Would you rather have infinite ice cream for breakfast or warm pizza for dessert every single day?",
+        "general": true
+      },
+      {
+        "text": "Would you rather be able to jump as high as a house or swim like a dolphin underwater?",
+        "general": true
+      },
+      {
+        "text": "Would you rather have neon green hair or blue skin like an alien?",
+        "general": true
+      },
+      {
+        "text": "Would you rather speak fluent animal language or be able to become invisible whenever you want?",
+        "general": true
+      },
+      {
+        "text": "Would you rather it rain chocolate milk or have snow made out of cotton candy?",
+        "general": true
+      },
+      {
+        "text": "Would you rather live inside a treehouse high in the woods or an underwater glass dome?",
+        "general": true
+      },
+      {
+        "text": "Would you rather always have to hop everywhere on two feet or crawl on all fours?",
+        "general": true
+      },
+      {
+        "text": "Would you rather have giant elephant ears or a long monkey tail?",
+        "general": true
+      },
+      {
+        "text": "Would you rather sleep on a giant marshmallow bed or slide down a water slide to get out of bed?",
+        "general": true
+      },
+      {
+        "text": "Would you rather only wear cozy pajamas all day or wear a superhero costume every day?",
+        "general": false
+      },
+      {
+        "text": "Would you rather only watch cartoons about talking puppies or cartoons about magical trains?",
+        "general": false
+      },
+      {
+        "text": "Would you rather play in a massive ball pit forever or on a giant bouncy castle?",
+        "general": false
+      },
+      {
+        "text": "Would you rather have toys that clean themselves up or toys that can talk to you?",
+        "general": false
+      },
+      {
+        "text": "Would you rather only eat chicken nuggets or only eat mac and cheese forever?",
+        "general": false
+      },
+      {
+        "text": "Would you rather have a bedtime story told by Mickey Mouse or by a friendly robot?",
+        "general": false
+      },
+      {
+        "text": "Would you rather ride a giant puppy to the playground or a flying teddy bear?",
+        "general": false
+      },
+      {
+        "text": "Would you rather color everything with glitter pens or giant smelly markers?",
+        "general": false
+      },
+      {
+        "text": "Would you rather have a slide that connects your bedroom to the kitchen or a ball pit floor?",
+        "general": false
+      },
+      {
+        "text": "Would you rather have shoes that light up with every step or shoes that squeak funny sounds?",
+        "general": false
+      },
+      {
+        "text": "Would you rather have a magical coloring book where drawings come alive or infinite stickers?",
+        "general": false
+      },
+      {
+        "text": "Would you rather play with kinetic sand or super stretchy gooey slime all day?",
+        "general": false
+      },
+      {
+        "text": "Would you rather have naptime last for 3 hours or never have to sleep at all?",
+        "general": false
+      },
+      {
+        "text": "Would you rather eat rainbow pancakes or dinosaur-shaped cookies for every meal?",
+        "general": false
+      },
+      {
+        "text": "Would you rather live in a land made entirely of Lego bricks or Play-Doh?",
+        "general": false
+      }
+    ],
+    "7+": [
+      {
+        "text": "Would you rather never have to do chores at home again or get unlimited allowance for doing them?",
+        "general": true
+      },
+      {
+        "text": "Would you rather always have bad breath that smells like garlic or feet that smell like rotten cheese?",
+        "general": true
+      },
+      {
+        "text": "Would you rather be able to read minds or be able to freeze time for 10 seconds?",
+        "general": true
+      },
+      {
+        "text": "Would you rather have to eat a live cricket or lick a dirty television screen?",
+        "general": true
+      },
+      {
+        "text": "Would you rather always have to speak in rhymes or only be able to whisper for the rest of your life?",
+        "general": true
+      },
+      {
+        "text": "Would you rather have super speed like the Flash or super strength like the Hulk?",
+        "general": true
+      },
+      {
+        "text": "Would you rather have a personal chef who cooks whatever you want or a personal driver everywhere?",
+        "general": true
+      },
+      {
+        "text": "Would you rather have an itchy nose that you can never scratch or permanent hiccups once every hour?",
+        "general": true
+      },
+      {
+        "text": "Would you rather live in a world where it never gets dark or a world where it never gets cold?",
+        "general": true
+      },
+      {
+        "text": "Would you rather have your feet grow twice their size or your hands turn bright purple permanently?",
+        "general": true
+      },
+      {
+        "text": "Would you rather have zero homework forever but summer vacation is cut in half, or keep it normal?",
+        "general": false
+      },
+      {
+        "text": "Would you rather have unlimited robux / V-Bucks or the best high-end gaming PC in the world?",
+        "general": false
+      },
+      {
+        "text": "Would you rather have your strictest teacher for every single class or have 2 hours of detention every Friday?",
+        "general": false
+      },
+      {
+        "text": "Would you rather have your parents sit in the back of your classroom all day or accompany you on field trips?",
+        "general": false
+      },
+      {
+        "text": "Would you rather always have to carry a 50-pound backpack or wear your school uniform on weekends?",
+        "general": false
+      },
+      {
+        "text": "Would you rather get caught picking your nose in front of the whole school or burp loudly during an exam?",
+        "general": false
+      },
+      {
+        "text": "Would you rather play Minecraft with no diamonds ever or play Fortnite with only common gray pistols?",
+        "general": false
+      },
+      {
+        "text": "Would you rather have infinite recess but only cafeteria vegetables for lunch, or normal recess with pizza?",
+        "general": false
+      },
+      {
+        "text": "Would you rather lose all your gaming save data or have your internet speed capped at 100kbps?",
+        "general": false
+      },
+      {
+        "text": "Would you rather be the smartest kid in your grade but have no friends, or be average with 20 best friends?",
+        "general": false
+      },
+      {
+        "text": "Would you rather have your phone taken away for a month or be grounded from going outside for 2 weeks?",
+        "general": false
+      },
+      {
+        "text": "Would you rather have to redo 1st grade over again right now or skip directly to high school tomorrow?",
+        "general": false
+      },
+      {
+        "text": "Would you rather have every video game you play run at 10 FPS or have 500ms ping permanently?",
+        "general": false
+      },
+      {
+        "text": "Would you rather accidentally call your teacher 'Mom' or drop your entire lunch tray in a quiet cafeteria?",
+        "general": false
+      },
+      {
+        "text": "Would you rather have your parents check every text message you send or give up gaming for an entire year?",
+        "general": false
+      }
+    ],
+    "13+": [
+      {
+        "text": "Would you rather have {player2} read your private search history or have {player3} read your last 5 text threads?",
+        "general": true,
+        "min_players": 3
+      },
+      {
+        "text": "Would you rather let {other} choose your outfit tomorrow or let them pick your social media profile picture for 24 hours?",
+        "general": true,
+        "min_players": 2
+      },
+      {
+        "text": "Would you rather be stranded in an escape room with {player2} or with {player3}?",
+        "general": true,
+        "min_players": 3
+      },
+      {
+        "text": "Would you rather have your entire browser history projected on a screen in front of your family or your crush?",
+        "general": true
+      },
+      {
+        "text": "Would you rather permanently lose your phone or never be able to use a computer or gaming console again?",
+        "general": true
+      },
+      {
+        "text": "Would you rather have 1 million followers on social media but zero real friends, or 3 loyal best friends and no socials?",
+        "general": true
+      },
+      {
+        "text": "Would you rather accidentally text a confession to your crush or to your strictest teacher?",
+        "general": true
+      },
+      {
+        "text": "Would you rather have your screen time capped at 1 hour per day or have no Wi-Fi and only slow cellular data?",
+        "general": true
+      },
+      {
+        "text": "Would you rather always have your mic accidentally open on Discord or always have your camera turn on randomly?",
+        "general": true
+      },
+      {
+        "text": "Would you rather relive your most cringe middle-school moment every month or have your most awkward photo as your school ID?",
+        "general": true
+      },
+      {
+        "text": "Would you rather be ghosted by someone you really like or have them tell you brutally honest feedback about your personality?",
+        "general": true
+      },
+      {
+        "text": "Would you rather never be able to play video games again or never be able to listen to music again?",
+        "general": true
+      },
+      {
+        "text": "Would you rather have your private group chat messages leaked to the entire school or have your parents read them?",
+        "general": true
+      },
+      {
+        "text": "Would you rather always smell like stale fast food fries or always have hair that looks greasy no matter what?",
+        "general": true
+      },
+      {
+        "text": "Would you rather be trapped in a 4-hour car ride with your most annoying classmate or with your ex?",
+        "general": true
+      },
+      {
+        "text": "Would you rather have everyone you know hear your inner thoughts for 10 minutes or see your saved TikTok / Reels draft folder?",
+        "general": true
+      },
+      {
+        "text": "Would you rather always have to say exactly what you're thinking without a filter or never be able to speak again?",
+        "general": true
+      },
+      {
+        "text": "Would you rather have infinite battery life on your phone with terrible cell service or 10% battery with 5G everywhere?",
+        "general": true
+      },
+      {
+        "text": "Would you rather get caught stalking someone's profile from 4 years ago or accidentally like their post from 2018?",
+        "general": true
+      },
+      {
+        "text": "Would you rather be the funniest person in school but terrible at sports and games, or the absolute best gamer/athlete with no humor?",
+        "general": true
+      },
+      {
+        "text": "Would you rather have to wear wet socks every single day for a year or sleep on a bed of slightly damp towels?",
+        "general": true
+      },
+      {
+        "text": "Would you rather have your parents read every text you send or have your teachers grade you based purely on their personal mood?",
+        "general": true
+      },
+      {
+        "text": "Would you rather get roasted by a crowd of strangers or have {other} brutally criticize your style in private?",
+        "general": true,
+        "min_players": 2
+      },
+      {
+        "text": "Would you rather have unlimited money to spend only on virtual in-game items or a $500 monthly budget in real life?",
+        "general": true
+      },
+      {
+        "text": "Would you rather accidentally leave your stream / screen share running overnight or send a voice note crying to a class chat?",
+        "general": true
+      },
+      {
+        "text": "Would you rather have permanent 300ms ping on every game you ever touch or have your PC/phone randomly crash once every two hours?",
+        "general": true
+      },
+      {
+        "text": "Would you rather have your worst school test score projected on the whiteboard in homeroom or drop your lunch tray in front of the entire cafeteria?",
+        "general": true
+      },
+      {
+        "text": "Would you rather be paired with {other} for a 3-legged race in front of the whole school or do a duet presentation with them in front of the principal?",
+        "general": true,
+        "min_players": 2
+      },
+      {
+        "text": "Would you rather have the entire school find out your secret screen time stats or read your unposted drafts/notes folder?",
+        "general": true
+      },
+      {
+        "text": "Would you rather have {player2} pick your outfit for picture day or have {player3} write your senior yearbook quote?",
+        "general": true,
+        "min_players": 3
+      },
+      {
+        "text": "Would you rather have everyone in this room read your private DMs from last week or have your strictest teacher read your search history?",
+        "general": true,
+        "min_players": 2
+      },
+      {
+        "text": "Would you rather be caught stalking {other_gender}'s profile in front of them or have {other} leak your daily screen time to your parents?",
+        "general": true,
+        "min_players": 2,
+        "requires_different_gender": true
+      },
+      {
+        "text": "Would you rather accidentally call {other} your crush's name to their face or send an embarrassing voice note to your grade group chat?",
+        "general": true,
+        "min_players": 2
+      },
+      {
+        "text": "Would you rather find out everyone in this room has a secret group chat without you, or find out your closest friend has been venting about you to others?",
+        "general": true,
+        "min_players": 3
+      },
+      {
+        "text": "Would you rather have {player2} confess your deepest secret to the whole school or have {player3} choose your social media story post for 24 hours?",
+        "general": true,
+        "min_players": 3
+      }
+    ],
+    "16+": [
+      {
+        "text": "Would you rather be stranded on a desert island with {player2} or be trapped in an elevator for 12 hours with {player3}?",
+        "general": true,
+        "min_players": 3
+      },
+      {
+        "text": "Would you rather let {other} see your saved photo favorites or let them see your blocked contacts list?",
+        "general": true,
+        "min_players": 2
+      },
+      {
+        "text": "Would you rather have to tell your biggest secret to {player2} or {player3}?",
+        "general": true,
+        "min_players": 3
+      },
+      {
+        "text": "Would you rather know the exact date and cause of your death or know the date of your biggest romantic heartbreak?",
+        "general": true
+      },
+      {
+        "text": "Would you rather earn $300,000/year at an excruciatingly soul-crushing job or $45,000/year doing your absolute passion?",
+        "general": true
+      },
+      {
+        "text": "Would you rather stay in a dramatic, toxic relationship with an exceptionally attractive person or a boring relationship with zero passion?",
+        "general": true
+      },
+      {
+        "text": "Would you rather have all your deleted text messages recovered and sent to your current partner or your boss?",
+        "general": true
+      },
+      {
+        "text": "Would you rather get trapped in an elevator for 6 hours with your ex or with your partner's overbearing parents?",
+        "general": true
+      },
+      {
+        "text": "Would you rather be universally admired by strangers but hated by your closest circle, or loved by your circle and hated by the public?",
+        "general": true
+      },
+      {
+        "text": "Would you rather marry someone for pure financial security without love, or marry for intense love while living in constant financial anxiety?",
+        "general": true
+      },
+      {
+        "text": "Would you rather know every single thought your partner has about you or have them know every thought you have about them?",
+        "general": true
+      },
+      {
+        "text": "Would you rather accidentally send an explicit text to your family group chat or to your supervisor/boss?",
+        "general": true
+      },
+      {
+        "text": "Would you rather be forced to confess your biggest secret on live TV or serve 3 months in county jail?",
+        "general": true
+      },
+      {
+        "text": "Would you rather be chronically broke in a vibrant, exciting city or wealthy in a desolate town in the middle of nowhere?",
+        "general": true
+      },
+      {
+        "text": "Would you rather find out that your entire life was an undercover Truman Show-style experiment or be forgotten immediately when you die?",
+        "general": true
+      },
+      {
+        "text": "Would you rather have to tell your biggest insecurity on a first date or listen to their entire ex-trauma monologue for 3 hours?",
+        "general": true
+      },
+      {
+        "text": "Would you rather never be able to consume caffeine/sugar again or never be able to eat junk/restaurant food again?",
+        "general": true
+      },
+      {
+        "text": "Would you rather find out your partner is an international spy or that they are deeply secretly boring with no ambitions?",
+        "general": true
+      },
+      {
+        "text": "Would you rather be cheated on by someone you deeply love or be the cheater and carry the guilt for the rest of your life?",
+        "general": true
+      },
+      {
+        "text": "Would you rather have your search history from the past 5 years published on Reddit or have your camera roll leaked?",
+        "general": true
+      },
+      {
+        "text": "Would you rather walk in on your parents having a romantic moment or have them walk in on you?",
+        "general": true
+      },
+      {
+        "text": "Would you rather lose the ability to lie ever again or have everyone know whenever you are telling the truth?",
+        "general": true
+      },
+      {
+        "text": "Would you rather have no one show up to your wedding or have someone dramatically object and spill your secrets during the vows?",
+        "general": true
+      },
+      {
+        "text": "Would you rather always be 20 minutes late to every important meeting or always be 45 minutes early with nothing to do?",
+        "general": true
+      },
+      {
+        "text": "Would you rather know every bad thing people say behind your back or remain blissfully ignorant of their genuine opinions?",
+        "general": true
+      }
+    ]
+  },
+  "most_likely_to": {
+    "3+": [
+      {
+        "text": "Between {all_players}, who is most likely to eat all the cookies from the jar before dinner?",
+        "general": true
+      },
+      {
+        "text": "Between {all_players}, who is most likely to make friends with a wild squirrel or puppy in the park?",
+        "general": true
+      },
+      {
+        "text": "Between {all_players}, who is most likely to splash everyone in the swimming pool?",
+        "general": true
+      },
+      {
+        "text": "Between {all_players}, who is most likely to fall asleep with ice cream all over their mouth?",
+        "general": true
+      },
+      {
+        "text": "Between {all_players}, who is most likely to dance wildly whenever music comes on?",
+        "general": true
+      },
+      {
+        "text": "Between {all_players}, who is most likely to try and pet a bumblebee?",
+        "general": true
+      },
+      {
+        "text": "Who is most likely to survive a dinosaur chase with {other}?",
+        "general": true,
+        "min_players": 2
+      },
+      {
+        "text": "Between {all_players}, who is most likely to build the tallest tower of blocks and then immediately smash it down?",
+        "general": false
+      },
+      {
+        "text": "Between {all_players}, who is most likely to lose both of their shoes at the playground?",
+        "general": false
+      },
+      {
+        "text": "Between {all_players}, who is most likely to throw a fit because their sandwich was cut into triangles instead of squares?",
+        "general": false
+      },
+      {
+        "text": "Between {all_players}, who is most likely to wear their superhero cape to the supermarket?",
+        "general": false
+      },
+      {
+        "text": "Between {all_players}, who is most likely to hide inside a clothing rack at a store?",
+        "general": false
+      },
+      {
+        "text": "Between {all_players}, who is most likely to cry because their favorite cartoon episode ended?",
+        "general": false
+      },
+      {
+        "text": "Between {all_players}, who is most likely to draw a picture with markers on their bedroom wall?",
+        "general": false
+      },
+      {
+        "text": "Between {all_players}, who is most likely to ask 'Are we there yet?' 50 times on a 10-minute drive?",
+        "general": false
+      },
+      {
+        "text": "Between {all_players}, who is most likely to put stickers all over their own forehead?",
+        "general": false
+      },
+      {
+        "text": "Between {all_players}, who is most likely to spill juice on their clean clothes 5 seconds before leaving the house?",
+        "general": false
+      },
+      {
+        "text": "Between {all_players}, who is most likely to refuse to take a bath without 15 rubber duckies?",
+        "general": false
+      },
+      {
+        "text": "Between {all_players}, who is most likely to pretend to be an airplane while running through a quiet library?",
+        "general": false
+      },
+      {
+        "text": "Between {all_players}, who is most likely to take off their socks and leave them under the couch?",
+        "general": false
+      },
+      {
+        "text": "Between {all_players}, who is most likely to sneak extra marshmallows into their cereal bowl?",
+        "general": false
+      },
+      {
+        "text": "Between {all_players}, who is most likely to wear pajamas to a birthday party?",
+        "general": false
+      },
+      {
+        "text": "Between {all_players}, who is most likely to try to eat Play-Doh because it smells like dough?",
+        "general": false
+      },
+      {
+        "text": "Between {all_players}, who is most likely to try to take the family cat for a walk on a leash?",
+        "general": false
+      },
+      {
+        "text": "Between {all_players}, who is most likely to fall asleep sitting straight up on the couch?",
+        "general": false
+      }
+    ],
+    "7+": [
+      {
+        "text": "Between {all_players}, who is most likely to laugh at the completely wrong, quietest moment in a movie?",
+        "general": true
+      },
+      {
+        "text": "Between {all_players}, who is most likely to accidentally leave the front door or refrigerator wide open?",
+        "general": true
+      },
+      {
+        "text": "Between {all_players}, who is most likely to eat something off the floor after staring at it for 5 seconds?",
+        "general": true
+      },
+      {
+        "text": "Between {all_players}, who is most likely to trip over their own two feet while walking on a completely flat floor?",
+        "general": true
+      },
+      {
+        "text": "Between {all_players}, who is most likely to become a famous YouTube celebrity or content creator?",
+        "general": true
+      },
+      {
+        "text": "Between {all_players}, who is most likely to get lost inside an amusement park or big shopping mall?",
+        "general": true
+      },
+      {
+        "text": "Between {all_players}, who is most likely to start a food fight at the dinner table?",
+        "general": true
+      },
+      {
+        "text": "Between {all_players}, who is most likely to try an absurd dare just to impress their friends?",
+        "general": true
+      },
+      {
+        "text": "Between {all_players}, who is most likely to stay up until sunrise playing games when they should be sleeping?",
+        "general": true
+      },
+      {
+        "text": "Between {all_players}, who is most likely to break an expensive mug or plate and pretend they have no idea what happened?",
+        "general": true
+      },
+      {
+        "text": "Who in this room is most likely to team up with {other} to pull off a ridiculous prank?",
+        "general": true,
+        "min_players": 2
+      },
+      {
+        "text": "Between {all_players}, who is most likely to forget their school backpack or lunchbox on a school bus?",
+        "general": false
+      },
+      {
+        "text": "Between {all_players}, who is most likely to get sent to the principal's office for making funny noises in class?",
+        "general": false
+      },
+      {
+        "text": "Between {all_players}, who is most likely to rage quit a multiplayer game and blame it on 999 ping?",
+        "general": false
+      },
+      {
+        "text": "Between {all_players}, who is most likely to accidentally say 'You too!' when the teacher says 'Enjoy your weekend' on a Monday?",
+        "general": false
+      },
+      {
+        "text": "Between {all_players}, who is most likely to forge their parents' signature and do a terrible, obvious job?",
+        "general": false
+      },
+      {
+        "text": "Between {all_players}, who is most likely to forget about a huge school project until 9 PM the night before it is due?",
+        "general": false
+      },
+      {
+        "text": "Between {all_players}, who is most likely to get caught playing games on their Chromebook during a math lecture?",
+        "general": false
+      },
+      {
+        "text": "Between {all_players}, who is most likely to spend an entire week's allowance on Roblox accessories or V-Bucks?",
+        "general": false
+      },
+      {
+        "text": "Between {all_players}, who is most likely to lose their winter jacket within the first week of winter?",
+        "general": false
+      },
+      {
+        "text": "Between {all_players}, who is most likely to get caught trading snacks under the desk during reading time?",
+        "general": false
+      },
+      {
+        "text": "Between {all_players}, who is most likely to start a silly rumor on the playground that becomes school folklore?",
+        "general": false
+      },
+      {
+        "text": "Between {all_players}, who is most likely to accidentally wear mismatched shoes or inside-out shirts to school?",
+        "general": false
+      },
+      {
+        "text": "Between {all_players}, who is most likely to get detention for chewing gum or throwing paper airplanes?",
+        "general": false
+      },
+      {
+        "text": "Between {all_players}, who is most likely to pretend their pet ate their homework with a completely straight face?",
+        "general": false
+      }
+    ],
+    "13+": [
+      {
+        "text": "Between {all_players}, who is most likely to send an embarrassing screenshot to the exact person it was taken from?",
+        "general": true
+      },
+      {
+        "text": "Between {all_players}, who is most likely to have an absurd 14-hour daily screen time average on their phone?",
+        "general": true
+      },
+      {
+        "text": "Between {all_players}, who is most likely to leave people on 'Delivered' for three weeks and then reply with 'lol my bad'?",
+        "general": true
+      },
+      {
+        "text": "Between {all_players}, who is most likely to accidentally leave their microphone unmuted while venting about someone in the call?",
+        "general": true
+      },
+      {
+        "text": "Between {all_players}, who is most likely to fall down an internet rabbit hole until 5 AM on a school/work night?",
+        "general": true
+      },
+      {
+        "text": "Between {all_players}, who is most likely to get banned from a major Discord server for posting an unhinged meme?",
+        "general": true
+      },
+      {
+        "text": "Between {all_players}, who is most likely to stalk an ex or crush's social media so thoroughly they know their entire family tree?",
+        "general": true
+      },
+      {
+        "text": "Between {all_players}, who is most likely to get locked out of their own house while wearing embarrassing pajamas?",
+        "general": true
+      },
+      {
+        "text": "Between {all_players}, who is most likely to spend their last penny on overpriced boba, iced matcha, or fast food?",
+        "general": true
+      },
+      {
+        "text": "Between {all_players}, who is most likely to panic and turn their phone off after sending a slightly bold text?",
+        "general": true
+      },
+      {
+        "text": "Between {all_players}, who is most likely to become an internet meme without even realizing it?",
+        "general": true
+      },
+      {
+        "text": "Between {all_players}, who is most likely to pretend they have plans just to stay in bed and watch YouTube/shows alone?",
+        "general": true
+      },
+      {
+        "text": "Between {all_players}, who is most likely to start crying because they dropped their fresh order of food on the sidewalk?",
+        "general": true
+      },
+      {
+        "text": "Between {all_players}, who is most likely to get scammed by an obvious online skin gambling site or bot?",
+        "general": true
+      },
+      {
+        "text": "Between {all_players}, who is most likely to spend 45 minutes taking selfies only to post none of them?",
+        "general": true
+      },
+      {
+        "text": "Between {all_players}, who is most likely to accidentally share their screen and expose their embarrassing playlist or tabs?",
+        "general": true
+      },
+      {
+        "text": "Between {all_players}, who is most likely to get into a heated 50-comment argument with an anonymous stranger online?",
+        "general": true
+      },
+      {
+        "text": "Between {all_players}, who is most likely to forget someone's name 2 seconds after being introduced to them?",
+        "general": true
+      },
+      {
+        "text": "Between {all_players}, who is most likely to fake sick to skip a presentation or speech in front of a crowd?",
+        "general": true
+      },
+      {
+        "text": "Between {all_players}, who is most likely to hold a grudge over a video game loss for an entire calendar year?",
+        "general": true
+      },
+      {
+        "text": "Between {all_players}, who is most likely to show up to an event in sweatpants while everyone else dressed up?",
+        "general": true
+      },
+      {
+        "text": "Between {all_players}, who is most likely to have 500+ unread text messages and 20,000 unread emails?",
+        "general": true
+      },
+      {
+        "text": "Between {all_players}, who is most likely to accidentally like an Instagram photo from 2016 at 3:30 AM?",
+        "general": true
+      },
+      {
+        "text": "Between {all_players}, who is most likely to say 'I'm 5 minutes away' when they haven't even gotten out of bed yet?",
+        "general": true
+      },
+      {
+        "text": "Who in this room is most likely to get arrested on vacation with {other} for doing something ridiculously stupid?",
+        "general": true,
+        "min_players": 2
+      },
+      {
+        "text": "Between {all_players}, who is most likely to show up on Monday morning having completely forgotten there was a major exam?",
+        "general": true
+      },
+      {
+        "text": "Between {all_players}, who is most likely to get caught texting under the desk by the strictest teacher?",
+        "general": true
+      },
+      {
+        "text": "Between {all_players}, who is most likely to start laughing uncontrollably in the middle of a completely silent exam?",
+        "general": true
+      },
+      {
+        "text": "Between {all_players}, who is most likely to accidentally like a classmate's post from 3 years ago while snooping?",
+        "general": true
+      },
+      {
+        "text": "Between {all_players}, who is most likely to survive a horror movie by sacrificing another player?",
+        "general": true
+      }
+    ],
+    "16+": [
+      {
+        "text": "Between {all_players}, who is most likely to show up 35 minutes late to their own birthday party holding an iced coffee?",
+        "general": true
+      },
+      {
+        "text": "Between {all_players}, who is most likely to get back with a toxic ex for the 4th time despite all warnings?",
+        "general": true
+      },
+      {
+        "text": "Between {all_players}, who is most likely to get kicked out of a venue or party for causing unprompted chaotic drama?",
+        "general": true
+      },
+      {
+        "text": "Between {all_players}, who is most likely to spend their entire paycheck on a weekend trip they cannot afford?",
+        "general": true
+      },
+      {
+        "text": "Between {all_players}, who is most likely to survive a horror movie apocalypse entirely through sheer dumb luck?",
+        "general": true
+      },
+      {
+        "text": "Between {all_players}, who is most likely to get fired from a job on their first day for saying something out of line?",
+        "general": true
+      },
+      {
+        "text": "Between {all_players}, who is most likely to fake a complete personality shift to impress someone they met 2 days ago?",
+        "general": true
+      },
+      {
+        "text": "Between {all_players}, who is most likely to get pulled over for speeding while singing a pop anthem at the top of their lungs?",
+        "general": true
+      },
+      {
+        "text": "Between {all_players}, who is most likely to become a wealthy corporate villain in 15 years?",
+        "general": true
+      },
+      {
+        "text": "Between {all_players}, who is most likely to accidentally get married in Vegas on an impulsive dare?",
+        "general": true
+      },
+      {
+        "text": "Between {all_players}, who is most likely to end up on a true crime documentary, either as a detective or a suspect?",
+        "general": true
+      },
+      {
+        "text": "Between {all_players}, who is most likely to ghost someone after three months of intense daily communication?",
+        "general": true
+      },
+      {
+        "text": "Between {all_players}, who is most likely to ruin a wedding or formal ceremony by giving an unhinged, overly honest toast?",
+        "general": true
+      },
+      {
+        "text": "Between {all_players}, who is most likely to have an undercover double life that none of their friends know about?",
+        "general": true
+      },
+      {
+        "text": "Between {all_players}, who is most likely to wake up in a completely different city with no recollection of booking the trip?",
+        "general": true
+      },
+      {
+        "text": "Between {all_players}, who is most likely to get into a physical brawl over a disputed board game rule?",
+        "general": true
+      },
+      {
+        "text": "Between {all_players}, who is most likely to go on a reality dating show and become the season's primary antagonist?",
+        "general": true
+      },
+      {
+        "text": "Between {all_players}, who is most likely to tell someone a brutal truth that destroys their entire ego?",
+        "general": true
+      },
+      {
+        "text": "Between {all_players}, who is most likely to disappear from all social media and start an off-grid farm in the mountains?",
+        "general": true
+      },
+      {
+        "text": "Between {all_players}, who is most likely to date someone strictly because they have a cool car or an aesthetic apartment?",
+        "general": true
+      },
+      {
+        "text": "Between {all_players}, who is most likely to stay up for 48 hours straight fueling themselves on energy drinks and spite?",
+        "general": true
+      },
+      {
+        "text": "Between {all_players}, who is most likely to accidentally leak a massive company or group secret in casual conversation?",
+        "general": true
+      },
+      {
+        "text": "Between {all_players}, who is most likely to successfully talk their way out of a serious legal ticket or citation?",
+        "general": true
+      },
+      {
+        "text": "Between {all_players}, who is most likely to write a bestselling tell-all memoir exposing everyone in this room?",
+        "general": true
+      },
+      {
+        "text": "Who in this room is most likely to bail {other} out of jail at 3 AM with zero questions asked?",
+        "general": true,
+        "min_players": 2
+      }
+    ]
+  },
+  "five_second_rule": {
+    "3+": [
+      {
+        "text": "Name 3 bright colors you can see right now.",
+        "general": true
+      },
+      {
+        "text": "Name 3 animals that have big fluffy tails.",
+        "general": true
+      },
+      {
+        "text": "Name 3 yummy things you love to eat.",
+        "general": true
+      },
+      {
+        "text": "Name 3 animals that live in the ocean.",
+        "general": true
+      },
+      {
+        "text": "Name 3 things you can wear on your head.",
+        "general": true
+      },
+      {
+        "text": "Name 3 noisy things that make a loud boom.",
+        "general": true
+      },
+      {
+        "text": "Name 3 cold things that melt in the sun.",
+        "general": true
+      },
+      {
+        "text": "Name 3 things you can do at a playground park.",
+        "general": true
+      },
+      {
+        "text": "Name 3 fruits that are round.",
+        "general": true
+      },
+      {
+        "text": "Name 3 animals that can fly in the sky.",
+        "general": true
+      },
+      {
+        "text": "Name 3 cartoon characters that have animal ears.",
+        "general": false
+      },
+      {
+        "text": "Name 3 toys you can build things with.",
+        "general": false
+      },
+      {
+        "text": "Name 3 bedtime routines you do before sleeping.",
+        "general": false
+      },
+      {
+        "text": "Name 3 Disney or Pixar animated movies.",
+        "general": false
+      },
+      {
+        "text": "Name 3 stuffed animals you have in your house.",
+        "general": false
+      },
+      {
+        "text": "Name 3 things inside a toy chest.",
+        "general": false
+      },
+      {
+        "text": "Name 3 flavors of ice cream you can get at a shop.",
+        "general": false
+      },
+      {
+        "text": "Name 3 playground equipment items (like slides, swings).",
+        "general": false
+      },
+      {
+        "text": "Name 3 superhero characters you know.",
+        "general": false
+      },
+      {
+        "text": "Name 3 shapes you can draw with a crayon.",
+        "general": false
+      },
+      {
+        "text": "Name 3 colors you would use to draw a rainbow.",
+        "general": false
+      },
+      {
+        "text": "Name 3 things you bring to preschool or kindergarten.",
+        "general": false
+      },
+      {
+        "text": "Name 3 fairy tale characters.",
+        "general": false
+      },
+      {
+        "text": "Name 3 things you can find on a farm.",
+        "general": false
+      },
+      {
+        "text": "Name 3 baby animals (like puppy, kitten, chick).",
+        "general": false
+      }
+    ],
+    "7+": [
+      {
+        "text": "Name 3 things you will always find inside a refrigerator.",
+        "general": true
+      },
+      {
+        "text": "Name 3 foods that smell terrible but taste great.",
+        "general": true
+      },
+      {
+        "text": "Name 3 pizza toppings that should never exist.",
+        "general": true
+      },
+      {
+        "text": "Name 3 things you do when your Wi-Fi suddenly cuts out.",
+        "general": true
+      },
+      {
+        "text": "Name 3 sports that involve kicking a ball.",
+        "general": true
+      },
+      {
+        "text": "Name 3 excuses people give for showing up late.",
+        "general": true
+      },
+      {
+        "text": "Name 3 chores you would pay someone else to do for you.",
+        "general": true
+      },
+      {
+        "text": "Name 3 animals that you would never want as a roommate.",
+        "general": true
+      },
+      {
+        "text": "Name 3 things you would do if you found $100 on the sidewalk.",
+        "general": true
+      },
+      {
+        "text": "Name 3 fast food restaurants you could eat at every day.",
+        "general": true
+      },
+      {
+        "text": "Name 3 subjects you study in school.",
+        "general": false
+      },
+      {
+        "text": "Name 3 things you have buried deep inside your school backpack.",
+        "general": false
+      },
+      {
+        "text": "Name 3 excuses a student gives for not having their homework.",
+        "general": false
+      },
+      {
+        "text": "Name 3 popular video game titles played on PC or console.",
+        "general": false
+      },
+      {
+        "text": "Name 3 YouTuber or Twitch streamers you watch.",
+        "general": false
+      },
+      {
+        "text": "Name 3 items you can buy at a school cafeteria.",
+        "general": false
+      },
+      {
+        "text": "Name 3 things that will get you detention in school.",
+        "general": false
+      },
+      {
+        "text": "Name 3 video game bosses or enemies.",
+        "general": false
+      },
+      {
+        "text": "Name 3 stationery items in a pencil case.",
+        "general": false
+      },
+      {
+        "text": "Name 3 games you can play on Roblox or Minecraft.",
+        "general": false
+      },
+      {
+        "text": "Name 3 rules teachers repeat every single day.",
+        "general": false
+      },
+      {
+        "text": "Name 3 reasons to get sent to the school nurse's office.",
+        "general": false
+      },
+      {
+        "text": "Name 3 outdoor recess games.",
+        "general": false
+      },
+      {
+        "text": "Name 3 cartoon or anime shows people in your class watch.",
+        "general": false
+      },
+      {
+        "text": "Name 3 things you hate doing on Sunday evening before school.",
+        "general": false
+      }
+    ],
+    "13+": [
+      {
+        "text": "Name 3 reasons someone might get blocked on Discord or Instagram.",
+        "general": true
+      },
+      {
+        "text": "Name 3 apps that drain your phone battery the fastest.",
+        "general": true
+      },
+      {
+        "text": "Name 3 excuses you use to leave a boring voice call without being rude.",
+        "general": true
+      },
+      {
+        "text": "Name 3 games that have the most toxic online player communities.",
+        "general": true
+      },
+      {
+        "text": "Name 3 things you do when you hear your parents walking toward your room.",
+        "general": true
+      },
+      {
+        "text": "Name 3 slang words that adults completely ruin when they use them.",
+        "general": true
+      },
+      {
+        "text": "Name 3 things you would take if you had 60 seconds to evacuate your house.",
+        "general": true
+      },
+      {
+        "text": "Name 3 reasons someone might leave you on 'Delivered' for 24 hours.",
+        "general": true
+      },
+      {
+        "text": "Name 3 things you should never say on a first date or hangout.",
+        "general": true
+      },
+      {
+        "text": "Name 3 snacks that make zero noise when you sneak them at 2 AM.",
+        "general": true
+      },
+      {
+        "text": "Name 3 cringe trends from 3 years ago that everyone forgot about.",
+        "general": true
+      },
+      {
+        "text": "Name 3 video games with over 100 hours of gameplay.",
+        "general": true
+      },
+      {
+        "text": "Name 3 lies people put in their social media bios.",
+        "general": true
+      },
+      {
+        "text": "Name 3 songs that instantly put you in a good mood.",
+        "general": true
+      },
+      {
+        "text": "Name 3 things you shouldn't search on a school or work Wi-Fi network.",
+        "general": true
+      },
+      {
+        "text": "Name 3 reasons you might mute a group chat notification permanently.",
+        "general": true
+      },
+      {
+        "text": "Name 3 YouTubers who fell off hard.",
+        "general": true
+      },
+      {
+        "text": "Name 3 things that make someone an instant 'red flag' friend.",
+        "general": true
+      },
+      {
+        "text": "Name 3 fashion items that look terrible on almost everyone.",
+        "general": true
+      },
+      {
+        "text": "Name 3 video streaming platforms you have active accounts on.",
+        "general": true
+      },
+      {
+        "text": "Name 3 excuses for missing an alarm in the morning.",
+        "general": true
+      },
+      {
+        "text": "Name 3 things that immediately ruin an otherwise fun party.",
+        "general": true
+      },
+      {
+        "text": "Name 3 reasons to cancel plans at the very last minute.",
+        "general": true
+      },
+      {
+        "text": "Name 3 awkward things people do when they don't know anyone in a room.",
+        "general": true
+      },
+      {
+        "text": "Name 3 foods you can eat while playing a game without dirtying your mouse/controller.",
+        "general": true
+      },
+      {
+        "text": "Name 3 excuses you use when you don't pick up a phone call from a friend.",
+        "general": true
+      },
+      {
+        "text": "Name 3 teachers who give way too much homework.",
+        "general": false
+      },
+      {
+        "text": "Name 3 things students secretly do under their desks during class.",
+        "general": true
+      },
+      {
+        "text": "Name 3 reasons someone might get removed from a class group chat.",
+        "general": true
+      },
+      {
+        "text": "Name 3 embarrassing items to pull out of a school backpack.",
+        "general": true
+      }
+    ],
+    "16+": [
+      {
+        "text": "Name 3 immediate dating red flags that make you run the other direction.",
+        "general": true
+      },
+      {
+        "text": "Name 3 believable excuses to call in sick to work on a Monday morning.",
+        "general": true
+      },
+      {
+        "text": "Name 3 things you should never bring up at a partner's family dinner.",
+        "general": true
+      },
+      {
+        "text": "Name 3 places where it is completely inappropriate to break up with someone.",
+        "general": true
+      },
+      {
+        "text": "Name 3 terrible pickup lines that have a 0% success rate.",
+        "general": true
+      },
+      {
+        "text": "Name 3 crimes you would commit if all laws were suspended for 1 hour.",
+        "general": true
+      },
+      {
+        "text": "Name 3 reasons people stay in relationships they know are doomed.",
+        "general": true
+      },
+      {
+        "text": "Name 3 signs that a party is about to be shut down by police.",
+        "general": true
+      },
+      {
+        "text": "Name 3 completely ridiculous things people spend their savings on.",
+        "general": true
+      },
+      {
+        "text": "Name 3 lies everyone tells on their job resume.",
+        "general": true
+      },
+      {
+        "text": "Name 3 things you would bury in a time capsule to confuse future humans.",
+        "general": true
+      },
+      {
+        "text": "Name 3 topics you should avoid when meeting your significant other's parents.",
+        "general": true
+      },
+      {
+        "text": "Name 3 things that will instantly kill the vibe on a first romantic encounter.",
+        "general": true
+      },
+      {
+        "text": "Name 3 reasons you would cut off a childhood friend today.",
+        "general": true
+      },
+      {
+        "text": "Name 3 things people do in public that make you lose faith in humanity.",
+        "general": true
+      },
+      {
+        "text": "Name 3 worst gifts you could possibly give on Valentine's Day.",
+        "general": true
+      },
+      {
+        "text": "Name 3 items you would buy at 2 AM to freak out a convenience store cashier.",
+        "general": true
+      },
+      {
+        "text": "Name 3 things that scream 'mid-life crisis' before age 25.",
+        "general": true
+      },
+      {
+        "text": "Name 3 worst songs to play during a slow romantic dance.",
+        "general": true
+      },
+      {
+        "text": "Name 3 excuses you gave to your parents when coming home smelling suspicious.",
+        "general": true
+      },
+      {
+        "text": "Name 3 reasons to break a lease or move out of an apartment immediately.",
+        "general": true
+      },
+      {
+        "text": "Name 3 petty reasons to reject someone after a first date.",
+        "general": true
+      },
+      {
+        "text": "Name 3 movies that are too emotionally devastating to ever watch a second time.",
+        "general": true
+      },
+      {
+        "text": "Name 3 things you would do if you woke up tomorrow with $10 million in offshore accounts.",
+        "general": true
+      },
+      {
+        "text": "Name 3 things people brag about that actually make them look pathetic.",
+        "general": true
+      }
+    ]
+  },
+  "charades": {
+    "3+": [
+      {
+        "text": "Brushing your teeth in front of a mirror",
+        "general": true
+      },
+      {
+        "text": "Monkey scratching its head and peeling a banana",
+        "general": true
+      },
+      {
+        "text": "Flying airplane hitting turbulence",
+        "general": true
+      },
+      {
+        "text": "Sneaking like a cat hunting a mouse",
+        "general": true
+      },
+      {
+        "text": "Eating an ice cream cone that is melting all over your hands",
+        "general": true
+      },
+      {
+        "text": "Blowing giant soap bubbles and popping them",
+        "general": true
+      },
+      {
+        "text": "Swimming in cold ocean water",
+        "general": true
+      },
+      {
+        "text": "Sleeping and waking up startled from an alarm",
+        "general": true
+      },
+      {
+        "text": "Walking an energetic dog pulling hard on the leash",
+        "general": true
+      },
+      {
+        "text": "Building a tall snowman in freezing weather",
+        "general": true
+      },
+      {
+        "text": "Building a towering castle with toy blocks and knocking it down",
+        "general": false
+      },
+      {
+        "text": "Playing patty-cake with an invisible friend",
+        "general": false
+      },
+      {
+        "text": "Coloring a picture with invisible crayons and tearing the paper",
+        "general": false
+      },
+      {
+        "text": "Pretending to drink from a baby bottle and falling asleep",
+        "general": false
+      },
+      {
+        "text": "Pushing a doll stroller across the room",
+        "general": false
+      },
+      {
+        "text": "Playing peek-a-boo behind your hands",
+        "general": false
+      },
+      {
+        "text": "Pretending to ride a rocking horse",
+        "general": false
+      },
+      {
+        "text": "Putting on giant adult shoes and wobbling around",
+        "general": false
+      },
+      {
+        "text": "Pretending to play on a playground slide",
+        "general": false
+      },
+      {
+        "text": "Pretending to be a duck quacking in a bathtub",
+        "general": false
+      },
+      {
+        "text": "Unwrapping a giant birthday present with excitement",
+        "general": false
+      },
+      {
+        "text": "Pretending to eat baby food and spitting it out",
+        "general": false
+      },
+      {
+        "text": "Playing with magnetic building tiles",
+        "general": false
+      },
+      {
+        "text": "Pretending to be a wind-up toy soldier",
+        "general": false
+      },
+      {
+        "text": "Trying to catch fireflies in a tiny invisible jar",
+        "general": false
+      }
+    ],
+    "7+": [
+      {
+        "text": "A chef accidentally flipping a hot pizza onto their own face",
+        "general": true
+      },
+      {
+        "text": "A rockstar smashing an electric guitar at the end of a solo",
+        "general": true
+      },
+      {
+        "text": "Someone stepping barefoot onto a sharp Lego brick in the dark",
+        "general": true
+      },
+      {
+        "text": "A soccer player dramatically faking a severe injury on the field",
+        "general": true
+      },
+      {
+        "text": "Someone struggling to carry 10 grocery bags at once without dropping them",
+        "general": true
+      },
+      {
+        "text": "A magician whose magic trick completely fails on stage",
+        "general": true
+      },
+      {
+        "text": "Trying to eat a bowl of soup on a bumpy rollercoaster",
+        "general": true
+      },
+      {
+        "text": "Someone battling an invisible bee or fly buzzing around their head",
+        "general": true
+      },
+      {
+        "text": "A fisherman reeling in a gigantic fish that pulls them into the water",
+        "general": true
+      },
+      {
+        "text": "Someone trying on clothes in a store that are three sizes too small",
+        "general": true
+      },
+      {
+        "text": "A kid sleeping at their school desk who suddenly gets called on by the teacher",
+        "general": false
+      },
+      {
+        "text": "An intense gamer raging and smashing their controller after losing a match",
+        "general": false
+      },
+      {
+        "text": "Sneaking a phone out of your pocket during class to text under the desk",
+        "general": false
+      },
+      {
+        "text": "Running frantically down the street trying to catch the school bus",
+        "general": false
+      },
+      {
+        "text": "Someone doing a Fortnite / TikTok dance in front of a silent, unimpressed crowd",
+        "general": false
+      },
+      {
+        "text": "A student trying to copy answers from their neighbor during a test without moving their head",
+        "general": false
+      },
+      {
+        "text": "Carrying an overflowing lunch tray and slipping on a banana peel",
+        "general": false
+      },
+      {
+        "text": "A Minecraft player frantically digging straight down to escape a creeper",
+        "general": false
+      },
+      {
+        "text": "A teacher furiously writing math formulas across a giant chalkboard",
+        "general": false
+      },
+      {
+        "text": "Trying to sneak into the kitchen for midnight snacks while the floorboards creak",
+        "general": false
+      },
+      {
+        "text": "Someone who forgot their locker combination and starts kicking the locker",
+        "general": false
+      },
+      {
+        "text": "An older sibling trying to hush a younger sibling before parents notice they cried",
+        "general": false
+      },
+      {
+        "text": "A goalkeeper diving to save a penalty kick and crashing into the net",
+        "general": false
+      },
+      {
+        "text": "Trying to untangle a pair of wired earphones that are impossibly knotted",
+        "general": false
+      },
+      {
+        "text": "Pretending your internet just froze during a video call to avoid answering",
+        "general": false
+      }
+    ],
+    "13+": [
+      {
+        "text": "Taking a stylish selfie while battling extreme 50mph winds",
+        "general": true
+      },
+      {
+        "text": "Someone whose smartphone just slipped out of their hand into a toilet bowl",
+        "general": true
+      },
+      {
+        "text": "Sneaking out of a room with the world's squeakiest wooden floorboards",
+        "general": true
+      },
+      {
+        "text": "An influencer filming an emotional apology video with fake crying",
+        "general": true
+      },
+      {
+        "text": "Someone trying to unlock their phone with Face ID right after waking up with puffy eyes",
+        "general": true
+      },
+      {
+        "text": "Pretending to listen to a friend while desperately waiting for them to stop talking so you can speak",
+        "general": true
+      },
+      {
+        "text": "Trying to text on your phone while walking and crashing into a street sign",
+        "general": true
+      },
+      {
+        "text": "A streamer whose green screen falls down exposing a trashed bedroom",
+        "general": true
+      },
+      {
+        "text": "Someone in a movie theater trying to open a loud crinkly candy wrapper in dead silence",
+        "general": true
+      },
+      {
+        "text": "Trying to discreetly check your breath into your hand before speaking to someone attractive",
+        "general": true
+      },
+      {
+        "text": "Walking past someone you know in the mall and pretending you didn't see them",
+        "general": true
+      },
+      {
+        "text": "Panicking while searching your pockets because you think you lost your phone, while holding it in your hand",
+        "general": true
+      },
+      {
+        "text": "Someone trying to discreetly unplug their phone charger from across the room without getting up",
+        "general": true
+      },
+      {
+        "text": "A person whose earphones got yanked out of their ears by a doorknob",
+        "general": true
+      },
+      {
+        "text": "Someone trying to eat hot pizza whose melted cheese refuses to break off",
+        "general": true
+      },
+      {
+        "text": "Acting totally normal after you just tripped and fell in front of a huge crowd of peers",
+        "general": true
+      },
+      {
+        "text": "A person trying to take an aesthetic Instagram photo of their meal while standing on a chair",
+        "general": true
+      },
+      {
+        "text": "Someone who just heard their favorite beat drop in their headphones in a dead silent room",
+        "general": true
+      },
+      {
+        "text": "Trying to hold in a massive sneeze during a high-stakes quiet exam",
+        "general": true
+      },
+      {
+        "text": "Trying to find good Wi-Fi signal by holding your phone up to the ceiling in weird angles",
+        "general": true
+      },
+      {
+        "text": "A gamer whose chair snaps backward mid-tournament",
+        "general": true
+      },
+      {
+        "text": "Someone trying to explain a complex video game lore to their totally confused grandma",
+        "general": true
+      },
+      {
+        "text": "Trying to quietly open a carbonated drink can in a quiet classroom",
+        "general": true
+      },
+      {
+        "text": "Someone who just made eye contact with their crush and completely forgets how human legs work",
+        "general": true
+      },
+      {
+        "text": "A person trying to parallel park while everyone on the sidewalk is staring and judging",
+        "general": true
+      }
+    ],
+    "16+": [
+      {
+        "text": "Trying to parallel park in an impossibly small spot while your date watches from the passenger seat",
+        "general": true
+      },
+      {
+        "text": "Acting completely sober and composed in front of strict parents after a chaotic night",
+        "general": true
+      },
+      {
+        "text": "A desperate job applicant trying to answer interview questions about skills they completely lied about having",
+        "general": true
+      },
+      {
+        "text": "Someone on a terrible first date faking a fake phone call emergency to escape out the back door",
+        "general": true
+      },
+      {
+        "text": "An insecure gym bro flexing in every reflective surface in the gym without anyone noticing",
+        "general": true
+      },
+      {
+        "text": "Someone who just realized their card got declined at a fancy restaurant with their date",
+        "general": true
+      },
+      {
+        "text": "A shady politician dodging hard-hitting questions at a press conference",
+        "general": true
+      },
+      {
+        "text": "Someone trying to assemble an IKEA wardrobe without the manual while having a psychological breakdown",
+        "general": true
+      },
+      {
+        "text": "A couple having a furious whispering argument in the grocery store aisle without making a scene",
+        "general": true
+      },
+      {
+        "text": "Someone trying to discreetly smell their own armpit in an elevator crowded with strangers",
+        "general": true
+      },
+      {
+        "text": "An undercover agent trying to act casual while speaking into a hidden wire in their shirt collar",
+        "general": true
+      },
+      {
+        "text": "A contestant on a reality dating show getting dramatically eliminated and storming out",
+        "general": true
+      },
+      {
+        "text": "Someone trying to remove a horribly uncomfortable pair of tight shoes under a restaurant table",
+        "general": true
+      },
+      {
+        "text": "A bouncer turning away someone with the world's most obvious fake ID",
+        "general": true
+      },
+      {
+        "text": "Someone whose zipper or button broke right before walking onto a stage",
+        "general": true
+      },
+      {
+        "text": "A chaotic driver screaming at other cars while pretending to listen to relaxing spa music",
+        "general": true
+      },
+      {
+        "text": "Someone who accidentally liked an old photo while stalking their partner's ex at 3 AM",
+        "general": true
+      },
+      {
+        "text": "A detective discovering an incriminating piece of evidence at a messy crime scene",
+        "general": true
+      },
+      {
+        "text": "A person waking up with an extreme hangover trying to piece together the events of last night",
+        "general": true
+      },
+      {
+        "text": "Someone desperately trying to clean their entire chaotic apartment in 5 minutes before guests arrive",
+        "general": true
+      },
+      {
+        "text": "An overly dramatic sommelier sniffing, swirling, and evaluating tap water like an expensive vintage wine",
+        "general": true
+      },
+      {
+        "text": "Someone trying to sneak into their house at 3 AM carrying their shoes while dodging creaky floorboards",
+        "general": true
+      },
+      {
+        "text": "A salesperson pitching an obvious pyramid scheme with aggressive enthusiasm",
+        "general": true
+      },
+      {
+        "text": "Someone trying to look calm while an enormous spider crawls on the wall right next to their face",
+        "general": true
+      },
+      {
+        "text": "A bride or groom having intense cold feet right before walking down the aisle",
+        "general": true
+      }
+    ]
+  },
+  "two_truths_and_a_lie": {
+    "3+": [
+      {
+        "text": "Topic: Favorite sweet treats and desserts you love to eat",
+        "general": true
+      },
+      {
+        "text": "Topic: Animals you have touched or pet in real life",
+        "general": true
+      },
+      {
+        "text": "Topic: Silly things that make you laugh uncontrollably",
+        "general": true
+      },
+      {
+        "text": "Topic: Places you have traveled to on a vacation or car trip",
+        "general": true
+      },
+      {
+        "text": "Topic: Funny accidents or goofy falls you have had",
+        "general": true
+      },
+      {
+        "text": "Topic: Foods that you think are completely gross or disgusting",
+        "general": true
+      },
+      {
+        "text": "Topic: Weird sounds or animal impressions you can make",
+        "general": true
+      },
+      {
+        "text": "Topic: Things you are secretly afraid of in the dark",
+        "general": true
+      },
+      {
+        "text": "Topic: Games you love playing outdoors in the sunshine",
+        "general": true
+      },
+      {
+        "text": "Topic: Things you have built or painted by yourself",
+        "general": true
+      },
+      {
+        "text": "Topic: Toys you keep in your bedroom",
+        "general": false
+      },
+      {
+        "text": "Topic: Cartoons and animated shows you watch every morning",
+        "general": false
+      },
+      {
+        "text": "Topic: Funny things that happened at preschool or daycare",
+        "general": false
+      },
+      {
+        "text": "Topic: Things you have hidden inside your toy chest",
+        "general": false
+      },
+      {
+        "text": "Topic: Bedtime stories your parents have read to you",
+        "general": false
+      },
+      {
+        "text": "Topic: Costumes you have dressed up in for Halloween or parties",
+        "general": false
+      },
+      {
+        "text": "Topic: Playground slides or swings you have played on",
+        "general": false
+      },
+      {
+        "text": "Topic: Stuffed animals you sleep with in your bed",
+        "general": false
+      },
+      {
+        "text": "Topic: Things you have drawn with crayons or finger paint",
+        "general": false
+      },
+      {
+        "text": "Topic: Treats you have sneaked out of the pantry without asking",
+        "general": false
+      },
+      {
+        "text": "Topic: Songs from movies you know all the lyrics to",
+        "general": false
+      },
+      {
+        "text": "Topic: Things you did when you were a baby that your parents told you",
+        "general": false
+      },
+      {
+        "text": "Topic: Rules in your house that you broke when nobody was looking",
+        "general": false
+      },
+      {
+        "text": "Topic: Things you wished for on your last birthday candles",
+        "general": false
+      },
+      {
+        "text": "Topic: Messes you made that an adult had to clean up",
+        "general": false
+      }
+    ],
+    "7+": [
+      {
+        "text": "Topic: Weird talents or unusual party tricks you can actually do",
+        "general": true
+      },
+      {
+        "text": "Topic: Things you have accidentally broken in the house and hidden",
+        "general": true
+      },
+      {
+        "text": "Topic: Gross things you have accidentally touched, eaten, or smelled",
+        "general": true
+      },
+      {
+        "text": "Topic: Times you got blamed for something your sibling or friend did",
+        "general": true
+      },
+      {
+        "text": "Topic: Ridiculous misunderstandings you had when you were younger",
+        "general": true
+      },
+      {
+        "text": "Topic: Sports injuries or clumsy accidents you had in front of people",
+        "general": true
+      },
+      {
+        "text": "Topic: Strange food combinations you swear are actually delicious",
+        "general": true
+      },
+      {
+        "text": "Topic: Bizarre dreams or recurring nightmares you still remember",
+        "general": true
+      },
+      {
+        "text": "Topic: Pets you have owned and weird habits they had",
+        "general": true
+      },
+      {
+        "text": "Topic: Times you got lost in a public place like a mall or park",
+        "general": true
+      },
+      {
+        "text": "Topic: Things that happened to you in the school cafeteria",
+        "general": false
+      },
+      {
+        "text": "Topic: Lies you told your teacher to get out of an assignment",
+        "general": false
+      },
+      {
+        "text": "Topic: Times you got caught breaking a rule in school",
+        "general": false
+      },
+      {
+        "text": "Topic: Video game achievements or tournament wins you claim to have",
+        "general": false
+      },
+      {
+        "text": "Topic: Times you raged while playing online games with friends",
+        "general": false
+      },
+      {
+        "text": "Topic: Things you secretly traded with classmates at school",
+        "general": false
+      },
+      {
+        "text": "Topic: Times you forged a parent's signature on a paper",
+        "general": false
+      },
+      {
+        "text": "Topic: Secrets you know about your school or teachers",
+        "general": false
+      },
+      {
+        "text": "Topic: Things you bought with your allowance that turned out to be trash",
+        "general": false
+      },
+      {
+        "text": "Topic: Excuses you used to fake being sick and skip a school day",
+        "general": false
+      },
+      {
+        "text": "Topic: Times you got sent to detention or the principal's office",
+        "general": false
+      },
+      {
+        "text": "Topic: Pranks you pulled on your siblings or classmates",
+        "general": false
+      },
+      {
+        "text": "Topic: Times you brought something banned or contraband to school",
+        "general": false
+      },
+      {
+        "text": "Topic: Tests you completely failed and hid from your parents",
+        "general": false
+      },
+      {
+        "text": "Topic: Times you got caught using electronics after bedtime",
+        "general": false
+      }
+    ],
+    "13+": [
+      {
+        "text": "Topic: Times you accidentally humiliated yourself on a group call or Discord",
+        "general": true
+      },
+      {
+        "text": "Topic: Romantic crushes you had that ended in total awkward disasters",
+        "general": true
+      },
+      {
+        "text": "Topic: Lies you told on the internet that got completely out of hand",
+        "general": true
+      },
+      {
+        "text": "Topic: Times you got grounded or had your phone confiscated by parents",
+        "general": true
+      },
+      {
+        "text": "Topic: Ridiculous drama you participated in on social media or group chats",
+        "general": true
+      },
+      {
+        "text": "Topic: Secret purchases you made online that your parents never found out about",
+        "general": true
+      },
+      {
+        "text": "Topic: Times you sneaked out of the house or went somewhere you weren't supposed to",
+        "general": true
+      },
+      {
+        "text": "Topic: Times you stalked someone's social media and got caught",
+        "general": true
+      },
+      {
+        "text": "Topic: Excuses you gave to get out of plans you were too lazy to attend",
+        "general": true
+      },
+      {
+        "text": "Topic: The most embarrassing text messages currently saved in your phone",
+        "general": true
+      },
+      {
+        "text": "Topic: Times you accidentally sent a message to the wrong person or chat",
+        "general": true
+      },
+      {
+        "text": "Topic: Strange addictions or hyperfixations you had for a few months",
+        "general": true
+      },
+      {
+        "text": "Topic: Times you broke a bone or ended up in the emergency room",
+        "general": true
+      },
+      {
+        "text": "Topic: Times you accidentally insulted someone to their face without realizing it",
+        "general": true
+      },
+      {
+        "text": "Topic: Music artists or songs you secretly love but would never admit publicly",
+        "general": true
+      },
+      {
+        "text": "Topic: Extreme lengths you went to avoid making eye contact with someone in public",
+        "general": true
+      },
+      {
+        "text": "Topic: Unbelievable rumors that were spread about you in school or online",
+        "general": true
+      },
+      {
+        "text": "Topic: Video game accounts or items you lost or got scammed out of",
+        "general": true
+      },
+      {
+        "text": "Topic: Times you stayed awake for over 36 hours and started hallucinating",
+        "general": true
+      },
+      {
+        "text": "Topic: Awkward encounters with a crush's parents or friends",
+        "general": true
+      },
+      {
+        "text": "Topic: Times you got caught red-handed doing something you swore you didn't do",
+        "general": true
+      },
+      {
+        "text": "Topic: Times your phone went off at the absolute worst possible moment",
+        "general": true
+      },
+      {
+        "text": "Topic: Fake personas or alternate accounts you maintained online",
+        "general": true
+      },
+      {
+        "text": "Topic: Times you blamed your sibling or pet for something that was 100% your fault",
+        "general": true
+      },
+      {
+        "text": "Topic: Cringey phases or aesthetic styles you tried out in the past",
+        "general": true
+      }
+    ],
+    "16+": [
+      {
+        "text": "Topic: Catastrophic dating experiences or first date horror stories",
+        "general": true
+      },
+      {
+        "text": "Topic: Major secrets you have successfully kept from your family for years",
+        "general": true
+      },
+      {
+        "text": "Topic: Times you had an encounter with law enforcement or venue security",
+        "general": true
+      },
+      {
+        "text": "Topic: Times you snuck into a venue, concert, or party you had no ticket for",
+        "general": true
+      },
+      {
+        "text": "Topic: Massive lies you put on a job resume or college application",
+        "general": true
+      },
+      {
+        "text": "Topic: Toxic things you did in past relationships that you now regret",
+        "general": true
+      },
+      {
+        "text": "Topic: Times you had to talk your way out of an impossible situation",
+        "general": true
+      },
+      {
+        "text": "Topic: Times you woke up somewhere with no idea how you got there",
+        "general": true
+      },
+      {
+        "text": "Topic: Financial disasters or ridiculous sums of money you blew impulsively",
+        "general": true
+      },
+      {
+        "text": "Topic: Petty acts of revenge you carried out against people who wronged you",
+        "general": true
+      },
+      {
+        "text": "Topic: Times you ghosted someone after leading them on for weeks",
+        "general": true
+      },
+      {
+        "text": "Topic: Controversial opinions you hold that would get you cancelled in public",
+        "general": true
+      },
+      {
+        "text": "Topic: Things you stole or 'borrowed' and never returned to the owner",
+        "general": true
+      },
+      {
+        "text": "Topic: Horrible car accidents, close calls, or traffic citations you have received",
+        "general": true
+      },
+      {
+        "text": "Topic: Times you pretended to be deeply in love just to not be alone",
+        "general": true
+      },
+      {
+        "text": "Topic: Times you walked in on something you were definitely not supposed to see",
+        "general": true
+      },
+      {
+        "text": "Topic: Fights, brawls, or public shouting matches you got involved in",
+        "general": true
+      },
+      {
+        "text": "Topic: Times you got fired from a job and the real unvarnished reason why",
+        "general": true
+      },
+      {
+        "text": "Topic: The most depraved or unhinged DM currently sitting in your message requests",
+        "general": true
+      },
+      {
+        "text": "Topic: Times you completely sabotaged an event or project on purpose",
+        "general": true
+      },
+      {
+        "text": "Topic: Relationships you had that you had to keep 100% hidden from everyone",
+        "general": true
+      },
+      {
+        "text": "Topic: Times you faked a medical or family emergency to get out of serious trouble",
+        "general": true
+      },
+      {
+        "text": "Topic: Ridiculous rumors about yourself that were actually completely true",
+        "general": true
+      },
+      {
+        "text": "Topic: Times you took the blame for someone else to protect them from disaster",
+        "general": true
+      },
+      {
+        "text": "Topic: The most expensive thing you have ever personally broken or ruined",
+        "general": true
+      }
+    ]
+  }
+}
