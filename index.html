@@ -972,17 +972,14 @@
         safeLevel = 'half';
         b.classList.add("safe-half");
         b.innerText = "👀 Safe: HALF";
-        showToast("Safe HALF: Truths & phone dares ON, weird physical spectacles BLOCKED");
       } else if (safeLevel === 'half') {
         safeLevel = 'off';
         b.classList.add("safe-off");
         b.innerText = "⚠️ Safe: OFF";
-        showToast("Safe OFF: All proximity & unfiltered dares active!");
       } else {
         safeLevel = 'full';
         b.classList.add("safe-full");
         b.innerText = "🛡️ Safe: FULL";
-        showToast("Safe FULL: All romance, contact & proximity blocked");
       }
     }
 
