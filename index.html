@@ -1072,28 +1072,7 @@
       document.documentElement.setAttribute("data-theme", next);
     });
 
-    /* Safe Mode */
-    function toggleSafeMode() {
-      safeMode = !safeMode;
-      const b = document.getElementById("btn-safe-mode");
-      if (safeMode) {
-        b.classList.add("safe-active");
-        b.innerText = "🛡️ Safe: ON";
-        showToast("Safe Mode ON (filters some prompts)");
-      } else {
-        b.classList.remove("safe-active");
-        b.innerText = "⚠️ Safe: OFF";
-        showToast("Safe Mode OFF (some prompts enabled)");
-      }
-    }
 
-    function isSafeModeViolation(item, rawText) {
-      if (!safeMode) return false;
-      if (item && (item.not_in_safe_mode === true || item.romantic === true)) return true;
-      const textLower = (rawText || "").toLowerCase();
-      const forbidden = ["crush", "hug", "kiss", "holding hands", "date", "slow dance", "attractiveness", "prom"];
-      return forbidden.some(w => textLower.includes(w));
-    }
 
     /* Age Selector */
     document.querySelectorAll(".age-chip").forEach(btn => {
