@@ -1412,14 +1412,173 @@
           "text": "Pretend {other} has fainted: perform dramatic movie fake CPR on them (dont apply too much force).",
           "general": true,
           "min_players": 2
+        },
+        {
+          "text": "Perform dramatic, over-the-top movie CPR on {other} (don't use high force!), pleading urgently 'Stay with me... don't you dare give up on me' with full soap-opera intensity (no shouting).",
+          "romantic": false,
+          "not_in_safe_mode": true
+        },
+        {
+          "text": "Sit on {other_gender}'s lap (or let them sit on yours) for one full round of the game while everyone takes turns.",
+          "requires_different_gender": true,
+          "romantic": true,
+          "not_in_safe_mode": true
+        },
+        {
+          "text": "Slow dance with {other_gender} with one hand on their waist/shoulder for 15 seconds in dead silence while the room watches.",
+          "requires_different_gender": true,
+          "romantic": true,
+          "not_in_safe_mode": true
+        },
+        {
+          "text": "Let {other_gender} hold your face in their hands for 10 seconds while maintaining deadpan eye contact without either person smiling.",
+          "requires_different_gender": true,
+          "romantic": true,
+          "not_in_safe_mode": true
+        },
+        {
+          "text": "Sit side-by-side with {other_gender} and rest your head on their shoulder for 15 seconds in complete silence while the room watches.",
+          "requires_different_gender": true,
+          "romantic": true,
+          "not_in_safe_mode": true
+        },
+        {
+          "text": "Let {other_gender} put an arm around your shoulder like best friends for the entire next round while the game continues.",
+          "requires_different_gender": true,
+          "romantic": true,
+          "not_in_safe_mode": true
+        },
+        {
+          "text": "Hold a 10-second silent hug with {other} without anyone in the room laughing.",
+          "romantic": true,
+          "not_in_safe_mode": true
+        },
+        {
+          "text": "Place {other}'s palm over your chest/heart for 12 seconds so they can tell everyone in the room your heart rate.",
+          "romantic": false,
+          "not_in_safe_mode": true
+        },
+        {
+          "text": "Let {other_gender} stand on the tops of your shoes while you try to walk 5 steps across the room together without either person falling over.",
+          "requires_different_gender": true,
+          "romantic": false,
+          "not_in_safe_mode": true
+        },
+        {
+          "text": "Trap a cushion or pillow between your back and {other_gender}'s back, and walk across the room together without using your hands or dropping it.",
+          "requires_different_gender": true,
+          "romantic": false,
+          "not_in_safe_mode": false
+        },
+        {
+          "text": "Sit knee-to-knee with {other_gender} and play a best-of-three rock-paper-scissors match in complete, dead silence.",
+          "requires_different_gender": true,
+          "romantic": false,
+          "not_in_safe_mode": false
+        },
+        {
+          "text": "Deliver your smoothest, most ridiculous compliment pitch to {other_gender} without laughing.",
+          "requires_different_gender": true,
+          "romantic": true,
+          "not_in_safe_mode": false
+        },
+        {
+          "text": "Arm wrestle with {other_gender}, but both of you must hold a completely straight poker face—first person to smile or laugh automatically loses.",
+          "requires_different_gender": true,
+          "romantic": false,
+          "not_in_safe_mode": false
+        },
+        {
+          "text": "Let {other_gender} put their cold hands against your neck or cheeks for 5 seconds without you flinching or pulling back.",
+          "requires_different_gender": true,
+          "romantic": false,
+          "not_in_safe_mode": false
+        },
+        {
+          "text": "Close your eyes: other players can either touch your hair or very lightly tap your shoulder; guess who did it.",
+          "min_players": 3,
+          "romantic": false,
+          "not_in_safe_mode": false
+        },
+        {
+          "text": "Let {other_gender} inspect your camera roll's 'Recently Deleted' folder for 15 seconds while you look away.",
+          "requires_different_gender": true,
+          "romantic": false,
+          "not_in_safe_mode": false
+        },
+        {
+          "text": "Let {other_gender} look through your recently searched accounts on Instagram or TikTok with everyone in the room watching your screen.",
+          "requires_different_gender": true,
+          "romantic": false,
+          "not_in_safe_mode": false
+        },
+        {
+          "text": "Hand your phone to {other_gender} and let them inspect the last 3 accounts you searched on Instagram or TikTok in front of {player2}.",
+          "requires_different_gender": true,
+          "min_players": 3,
+          "romantic": false,
+          "not_in_safe_mode": false
+        },
+        {
+          "text": "Show {other_gender} the single most recently taken photo in your camera roll (even if it's a terrible selfie, accidental snap, or screenshot) with zero explanation.",
+          "requires_different_gender": true,
+          "romantic": false,
+          "not_in_safe_mode": false
+        },
+        {
+          "text": "Let {player2} pick one random, unposed photo from your camera roll and send it directly to {other_gender}'s personal DMs.",
+          "requires_different_gender": true,
+          "min_players": 3,
+          "romantic": false,
+          "not_in_safe_mode": false
+        },
+        {
+          "text": "Let {other_gender} open your direct messages with your closest friend and read the last 3 sent messages out loud.",
+          "requires_different_gender": true,
+          "romantic": false,
+          "not_in_safe_mode": false
+        },
+        {
+          "text": "Hand your phone to {other} and let them read your most recent DM thread with a friend.",
+          "romantic": false,
+          "not_in_safe_mode": false
+        },
+        {
+          "text": "Let {player2} send a thumbs-down emoji to the last photo someone sent you in DMs.",
+          "min_players": 2,
+          "romantic": false,
+          "not_in_safe_mode": false
+        },
+        {
+          "text": "Hand your unlocked phone to {other_gender} for 15 seconds with permission to look through any messaging app or gallery (you get 1 veto on opening a specific app).",
+          "requires_different_gender": true,
+          "romantic": false,
+          "not_in_safe_mode": false
+        },
+        {
+          "text": "Let {other} browse your unlocked phone for exactly 15 seconds while you watch.",
+          "romantic": false,
+          "not_in_safe_mode": false
+        },
+        {
+          "text": "Let the group review your blocked contacts list and briefly explain why the top person ended up there.",
+          "romantic": false,
+          "not_in_safe_mode": false
+        },
+        {
+          "text": "Let {other_gender} scroll to a random reel or meme in your saved collection, and you must explain the context of why you saved it.",
+          "requires_different_gender": true,
+          "romantic": false,
+          "not_in_safe_mode": false
+        },
+        {
+          "text": "Let {other_gender} post a photo of you two in the same frame (background people don't count, no heart emoji) to your public story and leave it up for 15 minutes.",
+          "requires_different_gender": true,
+          "romantic": false,
+          "not_in_safe_mode": false
         }
       ],
       "16+": [
-        {
-          "text": "Let {other} browse your unlocked phone for exactly 15 seconds while you watch.",
-          "general": true,
-          "min_players": 2
-        },
         {
           "text": "Let {other} hold your wrist and 'take your pulse' while asking you 2 awkward questions you must answer honestly.",
           "general": true,
@@ -1444,31 +1603,8 @@
           "general": true
         },
         {
-          "text": "Close your eyes: other players can either touch your hair or very lightly tap your shoulder; guess who did it.",
-          "general": true,
-          "min_players": 2
-        },
-        {
-          "text": "Hold a 10-second silent hug with {other} without anyone in the room laughing.",
-          "general": true,
-          "min_players": 2
-        },
-        {
-          "text": "Text a close friend: 'We need to clear the air about yesterday...' wait 2 minutes, then text 'Never mind, wrong chat!'.",
-          "general": true
-        },
-        {
           "text": "Perform an over-the-top dramatic soap-opera death scene collapsing onto the floor.",
           "general": true
-        },
-        {
-          "text": "Let the group review your blocked contacts list and briefly explain why the top person ended up there.",
-          "general": true
-        },
-        {
-          "text": "Hand your phone to {other} and let them read your most recent DM thread with a friend.",
-          "general": true,
-          "min_players": 2
         },
         {
           "text": "Give a 2-minute TED Talk defending a completely unhinged conspiracy theory invented on the spot.",
@@ -1477,12 +1613,6 @@
         {
           "text": "Show your online shopping cart or order history to the group.",
           "general": true
-        },
-        {
-          "text": "Deliver your smoothest, most ridiculous compliment pitch to {other_gender} without laughing.",
-          "general": true,
-          "min_players": 2,
-          "requires_different_gender": true
         },
         {
           "text": "Rank {player2} and {player3} on who would be worse at surviving 48 hours alone in the wilderness.",
@@ -1516,11 +1646,6 @@
         },
         {
           "text": "Re-enact your most humiliating romantic failure with {other} playing the other person.",
-          "general": true,
-          "min_players": 2
-        },
-        {
-          "text": "Let the player to your left send a thumbs-down emoji to the last photo someone sent you in DMs.",
           "general": true,
           "min_players": 2
         },
